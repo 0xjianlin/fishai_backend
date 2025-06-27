@@ -11,6 +11,7 @@ from ..utils.util import extract_fish_region
 from .. import state
 import json
 from pathlib import Path
+import time
 
 BASE_DIR = Path(__file__).parent.parent.parent.resolve()
 
@@ -21,7 +22,6 @@ logging.basicConfig(level=getattr(logging, settings.LOG_LEVEL))
 
 # Load regulations.json
 reg_path = BASE_DIR / "references" / "regulation" / "regulations.json"
-print("reg_path", reg_path)
 with open(reg_path, 'r', encoding='utf-8') as f:
     REGULATIONS = json.load(f)["regulations"]
 
@@ -41,27 +41,35 @@ async def detect_and_classify_batch(files: List[UploadFile] = File(...)):
     Batch endpoint: Detect and classify fish in multiple images.
     Returns results grouped per image.
     """
+    total_start = time.time()
     if state.classifier is None or state.segmenter is None:
         raise HTTPException(status_code=503, detail="AI models not loaded")
     
     batch_results = []
     for file in files:
+        file_start = time.time()
         if not file.content_type.startswith('image/'):
             batch_results.append({"error": "File must be an image", "filename": file.filename})
             continue
         
         try:
             # Read image data
+            read_start = time.time()
             image_data = await file.read()
             image = Image.open(io.BytesIO(image_data))
             image_np = np.array(image)
+            read_time = time.time() - read_start
+            print(f"[TIMING] Image read for {file.filename}: {read_time:.2f} seconds")
             
             if len(image_np.shape) != 3:
                 batch_results.append({"error": "Image must be RGB", "filename": file.filename})
                 continue
             
             # Process image for fish detection
+            seg_start = time.time()
             polygons, masks = state.segmenter.segment(image_np)
+            seg_time = time.time() - seg_start
+            print(f"[TIMING] Segmentation for {file.filename}: {seg_time:.2f} seconds")
             results = []
             
             for i, (polygon, mask) in enumerate(zip(polygons, masks)):
@@ -71,7 +79,10 @@ async def detect_and_classify_batch(files: List[UploadFile] = File(...)):
                         continue
                     
                     # Classify fish
+                    cls_start = time.time()
                     classifications = state.classifier.classify(fish_region, top_k=10)
+                    cls_time = time.time() - cls_start
+                    print(f"[TIMING] Classification for fish {i} in {file.filename}: {cls_time:.2f} seconds")
                     
                     # Calculate bounding box
                     points = [(polygon[f"x{j+1}"], polygon[f"y{j+1}"]) for j in range(len(polygon)//2)]
@@ -92,7 +103,8 @@ async def detect_and_classify_batch(files: List[UploadFile] = File(...)):
                 except Exception as e:
                     logging.error(f"Error processing fish {i}: {e}")
                     continue
-            
+            file_time = time.time() - file_start
+            print(f"[TIMING] Total processing for {file.filename}: {file_time:.2f} seconds")
             batch_results.append({
                 "filename": file.filename,
                 "success": True,

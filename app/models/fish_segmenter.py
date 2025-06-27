@@ -2,6 +2,7 @@ import torch
 import numpy as np
 import cv2
 import logging
+import time
 from PIL import Image
 from shapely.geometry import Polygon
 from torch.nn import functional as F
@@ -12,6 +13,7 @@ class FishSegmenter:
     """
     
     def __init__(self, model_path, device='cpu'):
+        start_time = time.time()
         self.device = device
         
         # Load model
@@ -25,7 +27,8 @@ class FishSegmenter:
         self.mask_threshold = 0.5
         self.nms_threshold = 0.9
         
-        logging.info("Fish segmenter initialized successfully")
+        elapsed = time.time() - start_time
+        logging.info(f"Fish segmenter loaded successfully in {elapsed:.2f} seconds")
     
     def segment(self, image_np):
         """

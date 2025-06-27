@@ -2,6 +2,7 @@ import torch
 import numpy as np
 import json
 import logging
+import time
 from PIL import Image
 from torchvision import transforms
 import torch.nn as nn
@@ -13,6 +14,7 @@ class FishClassifier:
     """
     
     def __init__(self, model_path, data_set_path, indexes_path, device='cpu', threshold=6.84):
+        start_time = time.time()
         self.device = device
         self.threshold = threshold
         
@@ -33,7 +35,8 @@ class FishClassifier:
         ])
         
         self.softmax = nn.Softmax(dim=1)
-        logging.info("Fish classifier initialized successfully")
+        elapsed = time.time() - start_time
+        logging.info(f"Fish classifier loaded successfully in {elapsed:.2f} seconds")
     
     def classify(self, image_np, top_k=10):
         """
