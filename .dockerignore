@@ -60,7 +60,3 @@ RENDER_DEPLOYMENT.md
 
 # Cache (will be created at runtime)
 cache/
-models/classification/categories_prev.json
-
-# References (not needed in production)
-references/ 
