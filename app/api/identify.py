@@ -1,7 +1,5 @@
-from fastapi import APIRouter, UploadFile, File, HTTPException, Depends
-from typing import List, Dict, Any
-from ..models.species import PredictionResult, SpeciesResponse
-from ..services.image_processor import validate_image, enhance_image
+from fastapi import APIRouter, UploadFile, File, HTTPException
+from typing import List
 from ..utils.config import settings
 import os
 import logging

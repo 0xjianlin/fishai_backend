@@ -1,13 +1,6 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
-import cv2
-import numpy as np
-from PIL import Image
-import io
 import logging
-import os
-from typing import List, Dict, Any
 from datetime import datetime
 from .api import identify
 
