@@ -62,7 +62,12 @@ logs/
 # Cache and downloaded files
 cache/
 cache/models/
-cache/models/*
+models/*.pt
+models/*.ts
+models/*.h5
+*.pt
+*.ts
+*.h5
 
 # Model files (if they're large and you don't want to commit them)
 # Uncomment if your model files are too large for Git
