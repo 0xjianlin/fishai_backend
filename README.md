@@ -4,11 +4,12 @@ Backend service for fish species identification and regulation lookup.
 
 ## Features
 
-- Fish species identification using Fishial.ai API
+- Fish species identification using AI models
 - Fishing regulations lookup (freshwater and ocean)
 - Species information database
 - RESTful API endpoints
 - Batch image processing
+- Google Drive model integration
 
 ## Setup
 
@@ -23,20 +24,10 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-3. Create a `.env` file in the backend directory:
-```env
-# Server Configuration
-API_HOST=0.0.0.0
-API_PORT=8001
-DEBUG=True
-
-# API Keys
-FISHIAL_API_KEY=your_fishial_api_key_here
-CLOUDINARY_URL=your_cloudinary_url_here
-
-# Data Import
-IMPORT_DATA=True  # Set to True on first run to import regulation data
-```
+3. Configure model files (optional - for Google Drive integration):
+   - Upload your model files to Google Drive
+   - Update the URLs in `app/utils/model_config.py`
+   - Run `python setup_gdown.py` to test the setup
 
 4. Place regulation JSON files in the `references` directory:
 - `freshwater_sport_fishing_regulations.json`
@@ -49,11 +40,11 @@ IMPORT_DATA=True  # Set to True on first run to import regulation data
 python run.py
 ```
 
-The server will start at `http://localhost:8001`
+The server will start at `http://localhost:8000`
 
 2. Access the API documentation:
-- Swagger UI: `http://localhost:8001/docs`
-- ReDoc: `http://localhost:8001/redoc`
+- Swagger UI: `http://localhost:8000/docs`
+- ReDoc: `http://localhost:8000/redoc`
 
 ## API Endpoints
 
@@ -72,6 +63,11 @@ The server will start at `http://localhost:8001`
 - `POST /api/identify` - Identify fish in a single image
 - `POST /api/identify/batch` - Identify fish in multiple images
 
+### Model Management
+- `GET /health` - Health check with model status
+- `GET /models/info` - Get model information
+- `POST /models/refresh` - Refresh models from Google Drive
+
 ## Development
 
 ### Project Structure
@@ -84,7 +80,6 @@ backend/
 │   └── utils/          # Utilities
 ├── references/         # Data files
 ├── tests/             # Test files
-├── .env               # Environment variables
 ├── requirements.txt   # Dependencies
 └── run.py            # Server entry point
 ```

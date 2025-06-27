@@ -59,6 +59,11 @@ logs/
 *.tmp
 *.temp
 
+# Cache and downloaded files
+cache/
+cache/models/
+cache/models/*
+
 # Model files (if they're large and you don't want to commit them)
 # Uncomment if your model files are too large for Git
 # models/*.pt

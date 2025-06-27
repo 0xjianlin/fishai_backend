@@ -14,6 +14,8 @@ from .api import identify
 # Import our fish modules
 from .models.fish_classifier import FishClassifier
 from .models.fish_segmenter import FishSegmenter
+from .services.simple_model_manager import SimpleModelManager
+from .utils.model_config import get_model_urls, get_cache_dir, get_device
 
 from .state import classifier, segmenter
 
@@ -36,26 +38,46 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Model manager instance (using gdown - no credentials needed)
+model_manager = SimpleModelManager(get_cache_dir())
+
 @app.on_event("startup")
 async def startup_event():
     """Initialize models on startup"""
     from . import state 
     try:
+        # Get model URLs from configuration (using gdown approach)
+        model_urls = get_model_urls()
+        
+        # Download models from Google Drive using gdown
+        logging.info("Downloading models from Google Drive using gdown...")
+        success = model_manager.setup_models_from_urls(model_urls)
+        
+        if not success:
+            raise Exception("Failed to download required model files from Google Drive")
+        
+        # Verify all models are available
+        if not model_manager.verify_models():
+            raise Exception("Model verification failed")
+        
+        # Get model paths
+        model_paths = model_manager.get_all_model_paths()
+        
         # Initialize classifier
         state.classifier = FishClassifier(
-            model_path="models/classification/classification_model.ts",
-            data_set_path="models/classification/embedding_database.pt", 
-            indexes_path="models/classification/categories.json",
-            device="cpu"  # Change to "cuda" if GPU available
+            model_path=str(model_paths["classification_model.ts"]),
+            data_set_path=str(model_paths["embedding_database.pt"]), 
+            indexes_path=str(model_paths["categories.json"]),
+            device=get_device()
         )
         
         # Initialize segmenter
         state.segmenter = FishSegmenter(
-            model_path="models/classification/segmentation_model.ts",
-            device="cpu"  # Change to "cuda" if GPU available
+            model_path=str(model_paths["segmentation_model.ts"]),
+            device=get_device()
         )
         
-        logging.info("Models loaded successfully")
+        logging.info("Models loaded successfully from Google Drive using gdown")
         
     except Exception as e:
         logging.error(f"Failed to load models: {e}")
@@ -82,8 +104,28 @@ async def health_check():
             "classifier": state.classifier is not None,
             "segmenter": state.segmenter is not None
         },
+        "model_info": model_manager.get_model_info(),
         "timestamp": datetime.now().isoformat()
     }
+
+@app.get("/models/info")
+async def get_model_info():
+    """Get detailed information about model files"""
+    return model_manager.get_model_info()
+
+@app.post("/models/refresh")
+async def refresh_models():
+    """Force refresh of model files from Google Drive"""
+    try:
+        # Clear cache and re-download
+        model_manager.clear_cache()
+        
+        # Re-run startup process
+        await startup_event()
+        
+        return {"message": "Models refreshed successfully"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to refresh models: {str(e)}")
 
 if __name__ == "__main__":
     import uvicorn
