@@ -10,6 +10,9 @@ from PIL import Image
 from ..utils.util import extract_fish_region
 from .. import state
 import json
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).parent.parent.parent.resolve()
 
 router = APIRouter()
 
@@ -17,8 +20,9 @@ router = APIRouter()
 logging.basicConfig(level=getattr(logging, settings.LOG_LEVEL))
 
 # Load regulations.json
-REGULATION_PATH = os.path.join(os.path.dirname(__file__), '../../references/regulation/regulations.json')
-with open(REGULATION_PATH, 'r', encoding='utf-8') as f:
+reg_path = PROJECT_ROOT / "references" / "regulation" / "regulations.json"
+print("reg_path", reg_path)
+with open(reg_path, 'r', encoding='utf-8') as f:
     REGULATIONS = json.load(f)["regulations"]
 
 def find_regulation(common_name, scientific_name):
