@@ -11,6 +11,6 @@ services:
       - key: LOG_LEVEL
         value: INFO
       - key: PYTHON_VERSION
-        value: "3.9"
+        value: "3.10.9"
     healthCheckPath: /health
-    autoDeploy: true 
+    autoDeploy: true
