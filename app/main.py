@@ -24,7 +24,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000", 
         "http://localhost:8080",
-        "https://californiafishspecies.vercel.app/"  # Update this with your frontend URL
+        "https://fishai-frontend.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
