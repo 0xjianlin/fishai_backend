@@ -1,16 +1,20 @@
 import uvicorn
+import os
 
 def main():
+    # Get port from environment variable (Railway provides this)
+    port = int(os.environ.get("PORT", 8000))
+    
     # Run the server
     print("Starting Fishing-AI API server...")
-    print("Server will be available at http://localhost:8000")
-    print("API documentation: http://localhost:8000/docs")
+    print(f"Server will be available at http://0.0.0.0:{port}")
+    print(f"API documentation: http://0.0.0.0:{port}/docs")
     
     uvicorn.run(
         "app.main:app",
         host="0.0.0.0",
-        port=8000,
-        reload=True
+        port=port,
+        reload=False  # Disable reload in production
     )
 
 if __name__ == "__main__":
