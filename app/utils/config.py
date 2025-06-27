@@ -26,11 +26,6 @@ class Settings:
     # Image processing settings
     MAX_IMAGE_SIZE: int = 1024  # Maximum image size for processing
     
-    # Cloudinary Settings (optional - can be empty)
-    CLOUDINARY_CLOUD_NAME: str = ""
-    CLOUDINARY_API_KEY: str = ""
-    CLOUDINARY_API_SECRET: str = ""
-    
     # Logging
     LOG_LEVEL: str = "INFO"
 

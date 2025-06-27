@@ -3,8 +3,6 @@ from typing import List, Dict, Any
 from ..models.species import PredictionResult, SpeciesResponse
 from ..services.image_processor import validate_image, enhance_image
 from ..utils.config import settings
-import cloudinary
-import cloudinary.uploader
 import os
 import logging
 import cv2
@@ -19,13 +17,6 @@ router = APIRouter()
 
 # Configure logging
 logging.basicConfig(level=getattr(logging, settings.LOG_LEVEL))
-
-# Initialize Cloudinary
-cloudinary.config(
-    cloud_name=settings.CLOUDINARY_CLOUD_NAME,
-    api_key=settings.CLOUDINARY_API_KEY,
-    api_secret=settings.CLOUDINARY_API_SECRET
-)
 
 # Load regulations.json
 REGULATION_PATH = os.path.join(os.path.dirname(__file__), '../../references/regulation/regulations.json')
@@ -50,30 +41,42 @@ async def detect_and_classify_batch(files: List[UploadFile] = File(...)):
     """
     if state.classifier is None or state.segmenter is None:
         raise HTTPException(status_code=503, detail="AI models not loaded")
+    
     batch_results = []
     for file in files:
         if not file.content_type.startswith('image/'):
             batch_results.append({"error": "File must be an image", "filename": file.filename})
             continue
+        
         try:
+            # Read image data
             image_data = await file.read()
             image = Image.open(io.BytesIO(image_data))
             image_np = np.array(image)
+            
             if len(image_np.shape) != 3:
                 batch_results.append({"error": "Image must be RGB", "filename": file.filename})
                 continue
+            
+            # Process image for fish detection
             polygons, masks = state.segmenter.segment(image_np)
             results = []
+            
             for i, (polygon, mask) in enumerate(zip(polygons, masks)):
                 try:
                     fish_region = extract_fish_region(image_np, mask)
                     if fish_region.shape[0] < 50 or fish_region.shape[1] < 50:
                         continue
+                    
+                    # Classify fish
                     classifications = state.classifier.classify(fish_region, top_k=10)
+                    
+                    # Calculate bounding box
                     points = [(polygon[f"x{j+1}"], polygon[f"y{j+1}"]) for j in range(len(polygon)//2)]
                     points = np.array(points)
                     x1, y1 = points.min(axis=0)
                     x2, y2 = points.max(axis=0)
+                    
                     results.append({
                         "fish_id": i,
                         "bounding_box": {
@@ -85,16 +88,20 @@ async def detect_and_classify_batch(files: List[UploadFile] = File(...)):
                         "mask_area": int(cv2.countNonZero(mask))
                     })
                 except Exception as e:
+                    logging.error(f"Error processing fish {i}: {e}")
                     continue
+            
             batch_results.append({
                 "filename": file.filename,
                 "success": True,
                 "total_fish_detected": len(results),
                 "detections": results
             })
+            
         except Exception as e:
             batch_results.append({"error": str(e), "filename": file.filename})
 
+    # Process results and add regulations
     ret_results = []
     if len(batch_results) > 0:
         for result in batch_results:
@@ -150,3 +157,23 @@ async def get_species_list():
     except Exception as e:
         logging.error(f"Error getting species list: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+# @router.get("/images")
+# async def list_uploaded_images(max_results: int = 50):
+#     """List images uploaded to Cloudinary"""
+#     try:
+#         result = cloudinary_service.list_images(max_results)
+#         return result
+#     except Exception as e:
+#         logging.error(f"Error listing images: {e}")
+#         raise HTTPException(status_code=500, detail=str(e))
+
+# @router.delete("/images/{public_id}")
+# async def delete_image(public_id: str):
+#     """Delete an image from Cloudinary"""
+#     try:
+#         result = cloudinary_service.delete_image(public_id)
+#         return result
+#     except Exception as e:
+#         logging.error(f"Error deleting image: {e}")
+#         raise HTTPException(status_code=500, detail=str(e))

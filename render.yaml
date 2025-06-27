@@ -10,9 +10,7 @@ services:
         value: production
       - key: LOG_LEVEL
         value: INFO
-      - key: CLOUDINARY_CLOUD_NAME
-        sync: false  # You'll need to set this in Render dashboard
-      - key: CLOUDINARY_API_KEY
-        sync: false  # You'll need to set this in Render dashboard
-      - key: CLOUDINARY_API_SECRET
-        sync: false  # You'll need to set this in Render dashboard 
+      - key: PYTHON_VERSION
+        value: "3.9"
+    healthCheckPath: /health
+    autoDeploy: true 

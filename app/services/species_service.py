@@ -7,11 +7,11 @@ class FishSpecies(BaseModel):
     id: str
     common_name: str
     scientific_name: str
+    image_url: Optional[str] = None
     description: Optional[str] = None
     habitat: Optional[str] = None
     average_size: Optional[float] = None  # in cm
     record_size: Optional[float] = None   # in cm
-    image_url: Optional[str] = None
     regulations: Optional[Dict] = None
 
 class SpeciesService:
@@ -59,6 +59,24 @@ class SpeciesService:
             if query in species.common_name.lower() or 
                query in species.scientific_name.lower()
         ]
+
+    def add_species(self, species: FishSpecies):
+        """Add a species to the service"""
+        self.species_data[species.id] = species
+
+    def get_species_by_common_name(self, common_name: str) -> Optional[FishSpecies]:
+        """Get species by common name"""
+        for species in self.species_data.values():
+            if species.common_name.lower() == common_name.lower():
+                return species
+        return None
+
+    def get_species_by_scientific_name(self, scientific_name: str) -> Optional[FishSpecies]:
+        """Get species by scientific name"""
+        for species in self.species_data.values():
+            if species.scientific_name.lower() == scientific_name.lower():
+                return species
+        return None
 
 # Create a singleton instance
 species_service = SpeciesService() 
