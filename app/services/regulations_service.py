@@ -1,7 +1,10 @@
+import os
+from pathlib import Path
 from typing import List, Dict, Optional
 from pydantic import BaseModel
 import json
-from pathlib import Path
+
+BASE_DIR = Path(__file__).parent.parent.parent.resolve()
 
 class FishingRegulation(BaseModel):
     species_id: str
@@ -23,7 +26,7 @@ class RegulationsService:
     def _load_regulations(self):
         """Load regulations from JSON files"""
         try:
-            ref_path = Path(__file__).parent.parent.parent / "references"
+            ref_path = BASE_DIR / "references"
             
             # Load freshwater regulations
             fresh_file = ref_path / "freshwater_sport_fishing_regulations.json"

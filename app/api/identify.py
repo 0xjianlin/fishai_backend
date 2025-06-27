@@ -12,7 +12,7 @@ from .. import state
 import json
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).parent.parent.parent.resolve()
+BASE_DIR = Path(__file__).parent.parent.parent.resolve()
 
 router = APIRouter()
 
@@ -20,7 +20,7 @@ router = APIRouter()
 logging.basicConfig(level=getattr(logging, settings.LOG_LEVEL))
 
 # Load regulations.json
-reg_path = PROJECT_ROOT / "references" / "regulation" / "regulations.json"
+reg_path = BASE_DIR / "references" / "regulation" / "regulations.json"
 print("reg_path", reg_path)
 with open(reg_path, 'r', encoding='utf-8') as f:
     REGULATIONS = json.load(f)["regulations"]

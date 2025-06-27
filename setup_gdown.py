@@ -12,8 +12,8 @@ from pathlib import Path
 # Add the app directory to the Python path
 sys.path.insert(0, str(Path(__file__).parent / "app"))
 
-from services.simple_model_manager import SimpleModelManager
-from utils.model_config import get_model_urls, get_cache_dir
+from app.services.simple_model_manager import SimpleModelManager
+from app.utils.model_config import get_model_urls, get_cache_dir
 
 def setup_logging():
     """Setup logging configuration"""
