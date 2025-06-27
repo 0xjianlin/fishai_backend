@@ -1,0 +1,904 @@
+{
+  "regulations": [
+    {
+      "species": "Bay Scallop",
+      "regulatory_reference": "",
+      "category": "Mollusk",
+      "latin_name": "Argopecten ventricosus",
+      "daily_bag_limit": 0,
+      "minimum_size_limit": "",
+      "filleting_requirements": "",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Closed to recreational take"
+        }
+      ]
+    },
+    {
+      "species": "Black Rockfish",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Sebastes melanops",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Blue Rockfish",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Sebastes mystinus",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Brown Rockfish",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Sebastes auriculatus",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Cabezon",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Scorpaenichthys marmoratus",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Fillets must retain all of the skin on each fillet",
+      "season": [
+        {
+          "start_date": "2025-07-01",
+          "end_date": "2025-09-30",
+          "description": "Open shoreward of the 50-fathom depth contour"
+        },
+        {
+          "start_date": "2025-10-01",
+          "end_date": "2025-12-31",
+          "description": "Closed"
+        }
+      ]
+    },
+    {
+      "species": "California Halibut",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Paralichthys californicus",
+      "daily_bag_limit": 5,
+      "minimum_size_limit": "22 inches total length",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "California Scorpionfish (Sculpin)",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Scorpaena guttata",
+      "daily_bag_limit": 5,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Fillets must retain all of the skin on each fillet",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Canary Rockfish",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Sebastes pinniger",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Copper Rockfish",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Sebastes caurinus",
+      "daily_bag_limit": 1,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Curlfin Sole",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Pleuronichthys decurrens",
+      "daily_bag_limit": "No limit",
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Darkblotched Rockfish",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Sebastes crameri",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Dungeness Crab",
+      "regulatory_reference": "T14 CCR §29.01",
+      "category": "Crustacean",
+      "latin_name": "Metacarcinus magister",
+      "daily_bag_limit": 20,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not applicable",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Dwarf Rock Crab",
+      "regulatory_reference": "T14 CCR §29.04",
+      "category": "Crustacean",
+      "latin_name": "Metacarcinus gracilis",
+      "daily_bag_limit": 15,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not applicable",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Green Abalone",
+      "regulatory_reference": "T14 CCR §27.70",
+      "category": "Mollusk",
+      "latin_name": "Haliotis fulgens",
+      "daily_bag_limit": 0,
+      "minimum_size_limit": "",
+      "filleting_requirements": "",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Closed to recreational take"
+        }
+      ]
+    },
+    {
+      "species": "Greenblotched Rockfish",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Sebastes diaconus",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Kelp Greenling",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Hexagrammos decagrammus",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Fillets must retain all of the skin on each fillet",
+      "season": [
+        {
+          "start_date": "2025-07-01",
+          "end_date": "2025-09-30",
+          "description": "Open shoreward of the 50-fathom depth contour"
+        },
+        {
+          "start_date": "2025-10-01",
+          "end_date": "2025-12-31",
+          "description": "Closed"
+        }
+      ]
+    },
+    {
+      "species": "Leopard Shark",
+      "regulatory_reference": "T14 CCR §28.56",
+      "category": "Fish",
+      "latin_name": "Triakis semifasciata",
+      "daily_bag_limit": 3,
+      "minimum_size_limit": "36 inches total length",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Lingcod",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Ophiodon elongatus",
+      "daily_bag_limit": 2,
+      "minimum_size_limit": "22 inches total length",
+      "filleting_requirements": "Fillets must retain all of the skin on each fillet",
+      "season": [
+        {
+          "start_date": "2025-07-01",
+          "end_date": "2025-09-30",
+          "description": "Open shoreward of the 50-fathom depth contour"
+        },
+        {
+          "start_date": "2025-10-01",
+          "end_date": "2025-12-31",
+          "description": "Closed"
+        }
+      ]
+    },
+    {
+      "species": "Market Squid",
+      "regulatory_reference": "",
+      "category": "Cephalopod",
+      "latin_name": "Doryteuthis opalescens",
+      "daily_bag_limit": "Not specified",
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Olive Rockfish",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Sebastes serranoides",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Ocean Whitefish",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Caulolatilus princeps",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Pacific Razor Clam",
+      "regulatory_reference": "T14 CCR §29.06",
+      "category": "Mollusk",
+      "latin_name": "Siliqua patula",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not applicable",
+      "season": [
+        {
+          "start_date": "2025-11-01",
+          "end_date": "2026-03-31",
+          "description": "Open season for Pacific Razor Clams"
+        }
+      ]
+    },
+    {
+      "species": "Pacific Sanddab",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Citharichthys sordidus",
+      "daily_bag_limit": "No limit",
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Pink Abalone",
+      "regulatory_reference": "T14 CCR §27.71",
+      "category": "Mollusk",
+      "latin_name": "Haliotis corrugata",
+      "daily_bag_limit": 0,
+      "minimum_size_limit": "",
+      "filleting_requirements": "",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Closed to recreational take"
+        }
+      ]
+    },
+    {
+      "species": "Purple Sea Urchin",
+      "regulatory_reference": "",
+      "category": "Echinoderm",
+      "latin_name": "Strongylocentrotus purpuratus",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not applicable",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Quillback Rockfish",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Sebastes maliger",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Red Abalone",
+      "regulatory_reference": "T14 CCR §27.72",
+      "category": "Mollusk",
+      "latin_name": "Haliotis rufescens",
+      "daily_bag_limit": 0,
+      "minimum_size_limit": "",
+      "filleting_requirements": "",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Closed to recreational take"
+        }
+      ]
+    },
+    {
+      "species": "Red Rock Crab",
+      "regulatory_reference": "T14 CCR §29.02",
+      "category": "Crustacean",
+      "latin_name": "Cancer productus",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not applicable",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Red Sea Urchin",
+      "regulatory_reference": "",
+      "category": "Echinoderm",
+      "latin_name": "Mesocentrotus franciscanus",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not applicable",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Rock Greenling",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Hexagrammos lagocephalus",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Fillets must retain all of the skin on each fillet",
+      "season": [
+        {
+          "start_date": "2025-07-01",
+          "end_date": "2025-09-30",
+          "description": "Open shoreward of the 50-fathom depth contour"
+        },
+        {
+          "start_date": "2025-10-01",
+          "end_date": "2025-12-31",
+          "description": "Closed"
+        }
+      ]
+    },
+    {
+      "species": "Rock Sole",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Lepidopsetta bilineata",
+      "daily_bag_limit": "No limit",
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Rougheye Rockfish",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Sebastes aleutianus",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Sand Sole",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Lepidopsetta polyxystra",
+      "daily_bag_limit": "No limit",
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Sea Cucumber",
+      "regulatory_reference": "",
+      "category": "Echinoderm",
+      "latin_name": "Holothuroidea (various)",
+      "daily_bag_limit": 0,
+      "minimum_size_limit": "",
+      "filleting_requirements": "",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Closed to recreational take"
+        }
+      ]
+    },
+    {
+      "species": "Shore Crab",
+      "regulatory_reference": "T14 CCR §29.05",
+      "category": "Crustacean",
+      "latin_name": "Hemigrapsus nudus",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not applicable",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Spider Crab",
+      "regulatory_reference": "T14 CCR §29.03",
+      "category": "Crustacean",
+      "latin_name": "Libinia emarginata",
+      "daily_bag_limit": 5,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not applicable",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Splitnose Rockfish",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Sebastes diploproa",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Vermilion Rockfish",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Sebastes miniatus",
+      "daily_bag_limit": 2,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "White Seabass",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Atractoscion nobilis",
+      "daily_bag_limit": 3,
+      "minimum_size_limit": "28 inches total length or 20 inches alternate",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Widow Rockfish",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Sebastes entomelas",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round at all depths"
+        }
+      ]
+    },
+    {
+      "species": "Yellowtail",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Seriola lalandi",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "24 inches fork length (with allowance for up to 5 fish under 24 inches)",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Black Crappie",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Pomoxis nigromaculatus",
+      "daily_bag_limit": "No limit",
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Bluegill",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Lepomis macrochirus",
+      "daily_bag_limit": "No limit",
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Brown Trout",
+      "regulatory_reference": "T14 CCR §11.01",
+      "category": "Fish",
+      "latin_name": "Salmo trutta",
+      "daily_bag_limit": 5,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Brook Trout",
+      "regulatory_reference": "T14 CCR §11.02",
+      "category": "Fish",
+      "latin_name": "Salvelinus fontinalis",
+      "daily_bag_limit": 5,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Channel Catfish",
+      "regulatory_reference": "T14 CCR §11.03",
+      "category": "Fish",
+      "latin_name": "Ictalurus punctatus",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Common Carp",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Cyprinus carpio",
+      "daily_bag_limit": "No limit",
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Freshwater Crayfish",
+      "regulatory_reference": "T14 CCR §11.04",
+      "category": "Crustacean",
+      "latin_name": "Orconectes spp.",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not applicable",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Golden Trout",
+      "regulatory_reference": "T14 CCR §11.05",
+      "category": "Fish",
+      "latin_name": "Oncorhynchus aguabonita",
+      "daily_bag_limit": 2,
+      "minimum_size_limit": "8 inches fork length",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Largemouth Bass",
+      "regulatory_reference": "T14 CCR §11.06",
+      "category": "Fish",
+      "latin_name": "Micropterus salmoides",
+      "daily_bag_limit": 6,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Pumpkinseed",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Lepomis gibbosus",
+      "daily_bag_limit": "No limit",
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Rainbow Trout",
+      "regulatory_reference": "T14 CCR §11.07",
+      "category": "Fish",
+      "latin_name": "Oncorhynchus mykiss",
+      "daily_bag_limit": 5,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Sacramento Perch",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Archoplites interruptus",
+      "daily_bag_limit": 5,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Smallmouth Bass",
+      "regulatory_reference": "T14 CCR §11.08",
+      "category": "Fish",
+      "latin_name": "Micropterus dolomieu",
+      "daily_bag_limit": 6,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Spotted Bass",
+      "regulatory_reference": "T14 CCR §11.09",
+      "category": "Fish",
+      "latin_name": "Micropterus punctulatus",
+      "daily_bag_limit": 6,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "regulations": [
+    {
+      "species": "Black Crappie",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Pomoxis nigromaculatus",
+      "daily_bag_limit": "No limit",
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Bluegill",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Lepomis macrochirus",
+      "daily_bag_limit": "No limit",
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Brown Trout",
+      "regulatory_reference": "T14 CCR §11.01",
+      "category": "Fish",
+      "latin_name": "Salmo trutta",
+      "daily_bag_limit": 5,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Brook Trout",
+      "regulatory_reference": "T14 CCR §11.02",
+      "category": "Fish",
+      "latin_name": "Salvelinus fontinalis",
+      "daily_bag_limit": 5,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Channel Catfish",
+      "regulatory_reference": "T14 CCR §11.03",
+      "category": "Fish",
+      "latin_name": "Ictalurus punctatus",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Common Carp",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Cyprinus carpio",
+      "daily_bag_limit": "No limit",
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Freshwater Crayfish",
+      "regulatory_reference": "T14 CCR §11.04",
+      "category": "Crustacean",
+      "latin_name": "Orconectes spp.",
+      "daily_bag_limit": 10,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not applicable",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Golden Trout",
+      "regulatory_reference": "T14 CCR §11.05",
+      "category": "Fish",
+      "latin_name": "Oncorhynchus aguabonita",
+      "daily_bag_limit": 2,
+      "minimum_size_limit": "8 inches fork length",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Largemouth Bass",
+      "regulatory_reference": "T14 CCR §11.06",
+      "category": "Fish",
+      "latin_name": "Micropterus salmoides",
+      "daily_bag_limit": 6,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Pumpkinseed",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Lepomis gibbosus",
+      "daily_bag_limit": "No limit",
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Rainbow Trout",
+      "regulatory_reference": "T14 CCR §11.07",
+      "category": "Fish",
+      "latin_name": "Oncorhynchus mykiss",
+      "daily_bag_limit": 5,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Sacramento Perch",
+      "regulatory_reference": "",
+      "category": "Fish",
+      "latin_name": "Archoplites interruptus",
+      "daily_bag_limit": 5,
+      "minimum_size_limit": "Not specified",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Smallmouth Bass",
+      "regulatory_reference": "T14 CCR §11.08",
+      "category": "Fish",
+      "latin_name": "Micropterus dolomieu",
+      "daily_bag_limit": 6,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    },
+    {
+      "species": "Spotted Bass",
+      "regulatory_reference": "T14 CCR §11.09",
+      "category": "Fish",
+      "latin_name": "Micropterus punctulatus",
+      "daily_bag_limit": 6,
+      "minimum_size_limit": "No minimum size limit",
+      "filleting_requirements": "Not specified",
+      "season": [
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "description": "Open year-round"
+        }
+      ]
+    }
+  ]
+}
