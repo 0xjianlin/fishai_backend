@@ -25,9 +25,9 @@ reg_path = BASE_DIR / "references" / "regulation" / "regulations.json"
 with open(reg_path, 'r', encoding='utf-8') as f:
     REGULATIONS = json.load(f)["regulations"]
 
-img_path = BASE_DIR / "models" / "classification" / "image_urls.json"
-with open(img_path, 'r', encoding='utf-8') as f:
-    IMAGE_URLS = json.load(f)
+categories_path = BASE_DIR / "models" / "classification" / "categories.json"
+with open(categories_path, 'r', encoding='utf-8') as f:
+    CATEGORIES = json.load(f)
 
 def find_regulation(common_name, scientific_name):
     try:
@@ -39,11 +39,11 @@ def find_regulation(common_name, scientific_name):
         logging.error(f"Error in find_regulation: {e}")
         return {}
     
-def find_image_url(common_name, scientific_name):
+def find_category(common_name, scientific_name):
     try:
-        for img in IMAGE_URLS.keys():
-            if img.lower() == common_name.lower() or img.lower() == scientific_name.lower():
-                return IMAGE_URLS[img]
+        for cat in CATEGORIES['categories'].values():
+            if cat.get('name', '').lower() == common_name.lower() or cat.get('species_id', '').lower() == scientific_name.lower():
+                return cat
         return ""
     except Exception as e:
         logging.error(f"Error in find_regulation: {e}")
@@ -147,12 +147,12 @@ async def detect_and_classify_batch(files: List[UploadFile] = File(...)):
                     if classification['common_name'] not in unique_common_names and classification['common_name'] != "Unknown":
                         unique_common_names.append(classification['common_name'])
                         regulation = find_regulation(classification['common_name'], classification['scientific_name'])
-                        image_url = find_image_url(classification['common_name'], classification['scientific_name'])
+                        category = find_category(classification['common_name'], classification['scientific_name'])
                         result_line['detections'].append({
                             "common_name": classification['common_name'],
                             "scientific_name": classification['scientific_name'],
                             "confidence": classification['confidence'],
-                            "image_url": image_url,
+                            "image_url": category.get('image_url', ''),
                             "more_info": regulation
                         })
             ret_results.append(result_line)
@@ -169,7 +169,7 @@ async def get_species_list():
         species_list = []
         for cat_id, cat_info in state.classifier.indexes['categories'].items():
             regulation = find_regulation(cat_info['name'], cat_info['species_id'])
-            image_url = find_image_url(cat_info['name'], cat_info['species_id'])
+            image_url = cat_info.get('image_url', '')
             species_list.append({
                 "id": cat_id,
                 "name": cat_info['name'],

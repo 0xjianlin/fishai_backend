@@ -84,7 +84,6 @@ MODEL_URLS = {
     "classification_model.ts": "https://drive.google.com/file/d/1ma8Og-vJGz7hAMyI3vJFRRC-FU4qtNJQ/view?usp=drive_link",
     "embedding_database.pt": "https://drive.google.com/file/d/1EY4WDqKKdpXTYf4tD0SJjDWtSZZiYwB5/view?usp=drive_link", 
     "segmentation_model.ts": "https://drive.google.com/file/d/1l4g_po7tVebvbSPpCMEvx9xl9PCDMFX7/view?usp=drive_link",
-    "categories.json": "https://drive.google.com/file/d/1VXL3T9QonhK0io7PnT910PnrTCBsEL7p/view?usp=drive_link"
 }
 ```
 

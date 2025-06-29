@@ -28,10 +28,6 @@ class SimpleModelManager:
                 "description": "Fish segmentation model",
                 "required": True
             },
-            "categories.json": {
-                "description": "Species categories mapping",
-                "required": True
-            }
         }
         
         # Store file paths after download

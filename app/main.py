@@ -1,3 +1,5 @@
+import os
+from pathlib import Path
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import logging
@@ -12,6 +14,8 @@ from .utils.model_config import get_model_urls, get_cache_dir, get_device
 
 from .state import classifier, segmenter
 
+BASE_DIR = Path(__file__).parent.parent.resolve()
+
 app = FastAPI(
     title="Fishing-AI API",
     description="API for fish species identification and regulation lookup",
@@ -23,7 +27,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000", 
-        "http://localhost:8081",
+        "http://localhost:8080",
         "https://fishai-frontend.vercel.app"
     ],
     allow_credentials=True,
@@ -60,7 +64,7 @@ async def startup_event():
         state.classifier = FishClassifier(
             model_path=str(model_paths["classification_model.ts"]),
             data_set_path=str(model_paths["embedding_database.pt"]), 
-            indexes_path=str(model_paths["categories.json"]),
+            indexes_path=str(BASE_DIR / "models" / "classification" / "categories.json"),
             device=get_device()
         )
         

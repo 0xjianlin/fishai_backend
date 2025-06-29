@@ -49,7 +49,6 @@ The application now supports downloading model files from Google Drive instead o
    - `classification_model.ts`
    - `embedding_database.pt`
    - `segmentation_model.ts`
-   - `categories.json`
 
 ### 2.2 Get File IDs
 For each file:
@@ -72,7 +71,6 @@ MODEL_FILE_IDS = {
     "classification_model.ts": "YOUR_ACTUAL_CLASSIFICATION_MODEL_FILE_ID",
     "embedding_database.pt": "YOUR_ACTUAL_EMBEDDING_DATABASE_FILE_ID", 
     "segmentation_model.ts": "YOUR_ACTUAL_SEGMENTATION_MODEL_FILE_ID",
-    "categories.json": "YOUR_ACTUAL_CATEGORIES_FILE_ID"
 }
 ```
 
