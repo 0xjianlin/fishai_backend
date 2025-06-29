@@ -175,7 +175,8 @@ async def get_species_list():
                 "name": cat_info['name'],
                 "species_id": cat_info['species_id'],
                 "image_url": image_url,
-                "more_info": regulation
+                "more_info": regulation,
+                "location": cat_info.get('location', '')
             })
         
         return {
