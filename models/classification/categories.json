@@ -2429,6 +2429,222 @@
       "species_id": "Xiphias gladius",
       "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751161920/fish_images/ylyvy3tek63tmwanygoj.webp",
       "location": ""
+    },
+    "427": {
+      "name": "Bay Scallop",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751184770/fish_images/ytzr4irgii6i9qpvoanp.jpg",
+      "species_id": "Argopecten ventricosus",
+      "location": "California"
+    },
+    "428": {
+      "name": "Blue Rockfish",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751184862/fish_images/g97va80rqrqhpt4ayudv.jpg",
+      "species_id": "Sebastes mystinus",
+      "location": "California"
+    },
+    "429": {
+      "name": "Canary Rockfish",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751184906/fish_images/otsfguaviyfedythyqrx.jpg",
+      "species_id": "Sebastes pinniger",
+      "location": "California"
+    },
+    "430": {
+      "name": "Copper Rockfish",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751184906/fish_images/otsfguaviyfedythyqrx.jpg",
+      "species_id": "Sebastes caurinus",
+      "location": "California"
+    },
+    "431": {
+      "name": "Curlfin Sole",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751184968/fish_images/nxodxh4o9urzdmzd06to.jpg",
+      "species_id": "Pleuronichthys decurrens",
+      "location": "California"
+    },
+    "432": {
+      "name": "Darkblotched Rockfish",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751184990/fish_images/wburlfusn75zkukskjcc.jpg",
+      "species_id": "Sebastes crameri",
+      "location": "California"
+    },
+    "433": {
+      "name": "Dungeness Crab",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185015/fish_images/rz6rj9wc6fz45qgfaxod.jpg",
+      "species_id": "Metacarcinus magister",
+      "location": "California"
+    },
+    "434": {
+      "name": "Dwarf Rock Crab",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185045/fish_images/warlq9uidasmo5bu15ew.jpg",
+      "species_id": "Metacarcinus gracilis",
+      "location": "California"
+    },
+    "435": {
+      "name": "Freshwater Crayfish",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185078/fish_images/s4fd0cp0gbbvl1v1ig47.jpg",
+      "species_id": "Orconectes spp.",
+      "location": "California"
+    },
+    "436": {
+      "name": "Golden Trout",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185099/fish_images/h1yq1yx7jkveioavv6yu.jpg",
+      "species_id": "Oncorhynchus aguabonita",
+      "location": "California"
+    },
+    "437": {
+      "name": "Green Abalone",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185119/fish_images/fyrxdguxlhgux4lbrbfh.jpg",
+      "species_id": "Haliotis fulgens",
+      "location": "California"
+    },
+    "438": {
+      "name": "Greenblotched Rockfish",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185141/fish_images/j0psbymmcbdwjhkwlize.jpg",
+      "species_id": "Sebastes diaconus",
+      "location": "California"
+    },
+    "439": {
+      "name": "Kelp Greenling",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185168/fish_images/pod8o48uujrajqarfdu7.jpg",
+      "species_id": "Hexagrammos decagrammus",
+      "location": "California"
+    },
+    "440": {
+      "name": "Largemouth Bass",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185200/fish_images/upvq50me1125nvwwfnut.jpg",
+      "species_id": "Micropterus salmoides",
+      "location": "California"
+    },
+    "441": {
+      "name": "Market Squid",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185222/fish_images/tsme7vvqprgda8qda4si.jpg",
+      "species_id": "Doryteuthis opalescens",
+      "location": "California"
+    },
+    "442": {
+      "name": "Olive Rockfish",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185243/fish_images/kocjgufwy6vwsrytmsef.jpg",
+      "species_id": "Sebastes serranoides",
+      "location": "California"
+    },
+    "443": {
+      "name": "Pacific Razor Clam",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185288/fish_images/ytq3ywlr4okpuemv92n0.jpg",
+      "species_id": "Siliqua patula",
+      "location": "California"
+    },
+    "444": {
+      "name": "Pacific Sanddab",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185308/fish_images/gjb3vzysekre0hbbxshy.jpg",
+      "species_id": "Citharichthys sordidus",
+      "location": "California"
+    },
+    "445": {
+      "name": "Pink Abalone",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185330/fish_images/huytxr0rorywgb0tkgpi.jpg",
+      "species_id": "Haliotis corrugata",
+      "location": "California"
+    },
+    "446": {
+      "name": "Purple Sea Urchin",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185360/fish_images/kdafsf3g1pjgbbxv2wm2.jpg",
+      "species_id": "Strongylocentrotus purpuratus",
+      "location": "California"
+    },
+    "447": {
+      "name": "Quillback Rockfish",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185380/fish_images/tk3bzaqme4tul1xydzry.jpg",
+      "species_id": "Sebastes maliger",
+      "location": "California"
+    },
+    "448": {
+      "name": "Red Abalone",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185406/fish_images/vl87hac1qmg21uux8tau.jpg",
+      "species_id": "Haliotis rufescens",
+      "location": "California"
+    },
+    "449": {
+      "name": "Red Rock Crab",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185441/fish_images/sz3p9o0ktfmpvpaln7pi.jpg",
+      "species_id": "Cancer productus",
+      "location": "California"
+    },
+    "450": {
+      "name": "Red Sea Urchin",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185520/fish_images/btkfjr5i2oee5dq21sio.jpg",
+      "species_id": "Mesocentrotus franciscanus",
+      "location": "California"
+    },
+    "451": {
+      "name": "Rock Greenling",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185548/fish_images/yuslqovukhommxrmiimz.jpg",
+      "species_id": "Hexagrammos lagocephalus",
+      "location": "California"
+    },
+    "452": {
+      "name": "Rock Sole",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185568/fish_images/vj2sjpb6pt7t8chdipys.jpg",
+      "species_id": "Lepidopsetta bilineata",
+      "location": "California"
+    },
+    "453": {
+      "name": "Rougheye Rockfish",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185587/fish_images/svaqtjqz0aa2dzff66bk.jpg",
+      "species_id": "Sebastes aleutianus",
+      "location": "California"
+    },
+    "454": {
+      "name": "Sacramento Perch",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185611/fish_images/kybxyzooy5jecw5lzlku.jpg",
+      "species_id": "Archoplites interruptus",
+      "location": "California"
+    },
+    "455": {
+      "name": "Sand Sole",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185630/fish_images/n6vzitoe8wonxchmlhl0.jpg",
+      "species_id": "Lepidopsetta polyxystra",
+      "location": "California"
+    },
+    "456": {
+      "name": "Sea Cucumber",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185660/fish_images/vxfpowkilldiy1i8hrqs.jpg",
+      "species_id": "Holothuroidea (various)",
+      "location": "California"
+    },
+    "457": {
+      "name": "Shore Crab",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185679/fish_images/gbvccd2uayrctfsnr9hn.jpg",
+      "species_id": "Hemigrapsus nudus",
+      "location": "California"
+    },
+    "458": {
+      "name": "Spider Crab",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185697/fish_images/rfymuiwwg8vvt7vtwiuv.jpg",
+      "species_id": "Libinia emarginata",
+      "location": "California"
+    },
+    "459": {
+      "name": "Splitnose Rockfish",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185721/fish_images/tothhzmdrgwlmvpfkiya.jpg",
+      "species_id": "Sebastes diploproa",
+      "location": "California"
+    },
+    "460": {
+      "name": "White Seabass",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185754/fish_images/s8xhvfqz4y7osvqjk5mx.jpg",
+      "species_id": "Atractoscion nobilis",
+      "location": "California"
+    },
+    "461": {
+      "name": "Widow Rockfish",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185768/fish_images/vqflwg7iuipe9bifoela.jpg",
+      "species_id": "Sebastes entomelas",
+      "location": "California"
+    },
+    "462": {
+      "name": "Ocean Whitefish",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751186728/fish_images/thcc5rgvl3tfr4zumu1y.jpg",
+      "species_id": "Caulolatilus princeps",
+      "location": "California"
     }
   }
 }
