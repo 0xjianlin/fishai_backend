@@ -70,6 +70,34 @@ async def detect_and_classify_batch(files: List[UploadFile] = File(...)):
             polygons, masks = state.segmenter.segment(image_np)
             print(f"[DEBUG] Segmented {len(polygons)} fish in {file.filename}")
 
+            # Fallback if no valid fish masks or polygons
+            if not polygons or not masks or len(polygons) != len(masks):
+                print("[DEBUG] No valid segmentation. Falling back to whole image classification.")
+                classifications = state.classifier.classify(image_np, top_k=3)
+                if not classifications or all(c['common_name'] == "Unknown" for c in classifications):
+                    print(f"[INFO] No confident fallback classification for {file.filename}")
+                    batch_results.append({
+                        "filename": file.filename,
+                        "success": True,
+                        "total_fish_detected": 0,
+                        "detections": []
+                    })
+                else:
+                    batch_results.append({
+                        "filename": file.filename,
+                        "success": True,
+                        "total_fish_detected": 1,
+                        "detections": [{
+                            "fish_id": 0,
+                            "bounding_box": None,
+                            "polygon": None,
+                            "classifications": classifications,
+                            "mask_area": None
+                        }]
+                    })
+                continue
+
+
             detections = []
             for i, (polygon, mask) in enumerate(zip(polygons, masks)):
                 try:
