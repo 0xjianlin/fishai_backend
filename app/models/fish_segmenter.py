@@ -118,7 +118,7 @@ class FishSegmenter:
             # Find contours
             contours = self._bitmap_to_polygon(mask)
             
-            if len(contours) < 1 or len(contours[0]) < 10:
+            if len(contours) < 1:
                 continue
             
             # Convert to original image coordinates

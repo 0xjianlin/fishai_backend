@@ -55,7 +55,6 @@ async def detect_and_classify_batch(files: List[UploadFile] = File(...)):
     Batch endpoint: Detect and classify fish in multiple images.
     Returns results grouped per image.
     """
-    total_start = time.time()
     if state.classifier is None or state.segmenter is None:
         raise HTTPException(status_code=503, detail="AI models not loaded")
     
