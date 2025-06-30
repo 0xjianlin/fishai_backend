@@ -44,69 +44,32 @@ class FishClassifier:
             outputs = self.model(image_tensor)
 
         if isinstance(outputs, tuple):
-            embeddings, fc_output = outputs
+            _, fc_output = outputs
         else:
             raise ValueError("Expected model to return a tuple (embedding, fc_output)")
 
-        # FC Prediction
-        fc_probs = self.softmax(fc_output)
-        fc_class_id = torch.argmax(fc_probs, dim=1).item()
-        fc_confidence = fc_probs[0][fc_class_id].item()
+        probs = self.softmax(fc_output).squeeze()
+        topk_vals, topk_indices = torch.topk(probs, top_k)
 
-        fc_species = self.indexes['categories'].get(str(fc_class_id), {
-            'name': 'Unknown',
-            'species_id': 'unknown'
-        })
-
-        results = [{
-            'common_name': fc_species['name'],
-            'scientific_name': fc_species['species_id'],
-            'confidence': fc_confidence,
-            'method': 'fc_layer',
-            'raw_fc': fc_confidence,
-            'raw_embed': 0.0
-        }]
-
-        # Embedding-based top matches (expanded)
-        embedding_results = self._classify_by_embedding(embeddings[0], top_k=30)
-
-        for r in embedding_results:
+        results = []
+        for conf, class_id in zip(topk_vals.tolist(), topk_indices.tolist()):
+            species = self.indexes['categories'].get(str(class_id), {
+                'name': 'Unknown',
+                'species_id': 'unknown'
+            })
             results.append({
-                'common_name': r['name'],
-                'scientific_name': r['species_id'],
-                'confidence': r['accuracy'],
-                'method': 'embedding',
-                'raw_fc': 0.0,
-                'raw_embed': r['accuracy']
+                'common_name': species['name'],
+                'scientific_name': species['species_id'],
+                'confidence': conf,
+                'method': 'fc_layer'
             })
 
-        # Merge duplicates, prefer combined confidence
-        combined_scores = {}
+        logging.debug("classify() [fc_layer only]:")
         for r in results:
-            key = (r['common_name'], r['scientific_name'])
-            if key not in combined_scores:
-                combined_scores[key] = r
-            else:
-                # Combine scores if from different sources
-                combined_scores[key]['raw_fc'] = max(combined_scores[key]['raw_fc'], r['raw_fc'])
-                combined_scores[key]['raw_embed'] = max(combined_scores[key]['raw_embed'], r['raw_embed'])
+            logging.debug(f"  → {r['common_name']} ({r['confidence']:.4f})")
 
-        # Final reweighting
-        blended_results = []
-        for r in combined_scores.values():
-            # Weighting: adjust as needed (embedding trusted more here)
-            combined_conf = 0.4 * r['raw_fc'] + 0.6 * r['raw_embed']
-            r['confidence'] = combined_conf
-            blended_results.append(r)
+        return results
 
-        # Sort and truncate
-        sorted_results = sorted(blended_results, key=lambda x: x['confidence'], reverse=True)[:top_k]
-
-        logging.debug("classify() results:")
-        for r in sorted_results:
-            logging.debug(f"  → {r['common_name']} ({r['confidence']:.4f}) via blend: fc={r['raw_fc']:.4f}, embed={r['raw_embed']:.4f}")
-
-        return sorted_results
 
     def _classify_by_embedding(self, embedding: torch.Tensor, top_k: int = 3) -> List[Dict[str, Any]]:
         if isinstance(self.data_base, tuple):
@@ -141,5 +104,8 @@ class FishClassifier:
         return results
 
     def _distance_to_confidence(self, distance: float) -> float:
-        # return float(1 / (1 + math.exp(1.0 * (distance - 8.0))))  # Slower dropoff, midpoint=8
-        return max(0.01, 1.0 - min(distance / 15.0, 0.99))
+        # Empirically tuned to handle distances 3.5 (close) to 11.5 (far)
+        midpoint = 7.0      # Shift the midpoint (closer means more generous)
+        steepness = 1.5     # Controls curve slope
+        confidence = 1 / (1 + math.exp(steepness * (distance - midpoint)))
+        return float(confidence)

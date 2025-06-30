@@ -107,7 +107,7 @@ async def detect_and_classify_batch(files: List[UploadFile] = File(...)):
                         print(f"[DEBUG] Skipping small fish region in {file.filename}")
                         continue
 
-                    classifications = state.classifier.classify(fish_region, top_k=10)
+                    classifications = state.classifier.classify(fish_region, top_k=3)
 
                     if not classifications or all(c['common_name'] == "Unknown" for c in classifications):
                         print(f"[DEBUG] No valid classification for fish {i} in {file.filename}")
