@@ -6,12 +6,11 @@ import logging
 import time
 from PIL import Image
 from torchvision import transforms
-import torch.nn as nn
 from typing import List, Dict, Any
 
 class FishClassifier:
     """
-    Simplified fish classifier for FastAPI integration
+    Fish classifier using only embedding-based similarity (no FC layer).
     """
 
     def __init__(self, model_path, data_set_path, indexes_path, device='cpu', threshold=5.0):
@@ -32,9 +31,8 @@ class FishClassifier:
             transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
         ])
 
-        self.softmax = nn.Softmax(dim=1)
         elapsed = time.time() - start_time
-        logging.info(f"Fish classifier loaded successfully in {elapsed:.2f} seconds")
+        logging.info(f"Embedding-based fish classifier loaded in {elapsed:.2f} seconds")
 
     def classify(self, image_np, top_k=3):
         image_pil = Image.fromarray(image_np)
@@ -43,33 +41,13 @@ class FishClassifier:
         with torch.no_grad():
             outputs = self.model(image_tensor)
 
-        if isinstance(outputs, tuple):
-            _, fc_output = outputs
-        else:
+        if not isinstance(outputs, tuple) or len(outputs) != 2:
             raise ValueError("Expected model to return a tuple (embedding, fc_output)")
 
-        probs = self.softmax(fc_output).squeeze()
-        topk_vals, topk_indices = torch.topk(probs, top_k)
+        embedding = outputs[0][0]  # First item is the embedding
 
-        results = []
-        for conf, class_id in zip(topk_vals.tolist(), topk_indices.tolist()):
-            species = self.indexes['categories'].get(str(class_id), {
-                'name': 'Unknown',
-                'species_id': 'unknown'
-            })
-            results.append({
-                'common_name': species['name'],
-                'scientific_name': species['species_id'],
-                'confidence': conf,
-                'method': 'fc_layer'
-            })
-
-        logging.debug("classify() [fc_layer only]:")
-        for r in results:
-            logging.debug(f"  → {r['common_name']} ({r['confidence']:.4f})")
-
-        return results
-
+        # Run embedding similarity
+        return self._classify_by_embedding(embedding, top_k)
 
     def _classify_by_embedding(self, embedding: torch.Tensor, top_k: int = 3) -> List[Dict[str, Any]]:
         if isinstance(self.data_base, tuple):
@@ -83,29 +61,35 @@ class FishClassifier:
         values, indices = torch.sort(distances)
 
         results = []
-        for idx in indices[:top_k]:
+        seen_species = set()
+        for idx in indices:
             idx = idx.item()
             id_entry = db_ids[idx]
             internal_id = id_entry if isinstance(id_entry, int) else id_entry[0]
-            distance_val = distances[idx].item()
-
             category = self.indexes['categories'].get(str(internal_id), {'name': 'Unknown', 'species_id': 'unknown'})
+
+            # Ensure uniqueness of species
+            if category['species_id'] in seen_species:
+                continue
+
+            seen_species.add(category['species_id'])
+            distance_val = distances[idx].item()
             confidence = self._distance_to_confidence(distance_val)
 
-            print(f"[DEBUG] Distance to {category['name']} ({category['species_id']}): {distance_val:.4f}, confidence={confidence:.4f}")
-
             results.append({
-                'name': category['name'],
-                'species_id': category['species_id'],
-                'accuracy': confidence,
-                'distance': distance_val
+                'common_name': category['name'],
+                'scientific_name': category['species_id'],
+                'confidence': confidence,
+                'method': 'embedding'
             })
+
+            if len(results) >= top_k:
+                break
 
         return results
 
     def _distance_to_confidence(self, distance: float) -> float:
-        # Empirically tuned to handle distances 3.5 (close) to 11.5 (far)
-        midpoint = 7.0      # Shift the midpoint (closer means more generous)
-        steepness = 1.5     # Controls curve slope
-        confidence = 1 / (1 + math.exp(steepness * (distance - midpoint)))
-        return float(confidence)
+        max_distance = 14
+        min_distance = 3
+        normalized = max(0.0, min(1.0, (max_distance - distance) / (max_distance - min_distance)))
+        return round(normalized, 4)

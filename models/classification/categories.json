@@ -2561,6 +2561,12 @@
       "species_id": "Xiphias gladius",
       "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751161920/fish_images/ylyvy3tek63tmwanygoj.webp",
       "location": ""
+    },
+    "427": {
+      "name": "Sacramento Perch",
+      "species_id": "Archoplites interruptus",
+      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185611/fish_images/kybxyzooy5jecw5lzlku.jpg",
+      "location": "California"
     }
   }
 }
