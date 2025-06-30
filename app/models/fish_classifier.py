@@ -1,3 +1,4 @@
+import math
 import torch
 import numpy as np
 import json
@@ -47,11 +48,10 @@ class FishClassifier:
         else:
             raise ValueError("Expected model to return a tuple (embedding, fc_output)")
 
+        # FC Prediction
         fc_probs = self.softmax(fc_output)
         fc_class_id = torch.argmax(fc_probs, dim=1).item()
         fc_confidence = fc_probs[0][fc_class_id].item()
-
-        logging.debug(f"FC prediction: class_id={fc_class_id}, confidence={fc_confidence:.4f}")
 
         fc_species = self.indexes['categories'].get(str(fc_class_id), {
             'name': 'Unknown',
@@ -62,30 +62,49 @@ class FishClassifier:
             'common_name': fc_species['name'],
             'scientific_name': fc_species['species_id'],
             'confidence': fc_confidence,
-            'method': 'fc_layer'
+            'method': 'fc_layer',
+            'raw_fc': fc_confidence,
+            'raw_embed': 0.0
         }]
 
-        embedding_results = self._classify_by_embedding(embeddings[0], top_k)
+        # Embedding-based top matches (expanded)
+        embedding_results = self._classify_by_embedding(embeddings[0], top_k=30)
 
         for r in embedding_results:
             results.append({
                 'common_name': r['name'],
                 'scientific_name': r['species_id'],
                 'confidence': r['accuracy'],
-                'method': 'embedding'
+                'method': 'embedding',
+                'raw_fc': 0.0,
+                'raw_embed': r['accuracy']
             })
 
-        deduped = {}
+        # Merge duplicates, prefer combined confidence
+        combined_scores = {}
         for r in results:
             key = (r['common_name'], r['scientific_name'])
-            if key not in deduped or r['confidence'] > deduped[key]['confidence']:
-                deduped[key] = r
+            if key not in combined_scores:
+                combined_scores[key] = r
+            else:
+                # Combine scores if from different sources
+                combined_scores[key]['raw_fc'] = max(combined_scores[key]['raw_fc'], r['raw_fc'])
+                combined_scores[key]['raw_embed'] = max(combined_scores[key]['raw_embed'], r['raw_embed'])
 
-        sorted_results = sorted(deduped.values(), key=lambda x: x['confidence'], reverse=True)[:top_k]
+        # Final reweighting
+        blended_results = []
+        for r in combined_scores.values():
+            # Weighting: adjust as needed (embedding trusted more here)
+            combined_conf = 0.4 * r['raw_fc'] + 0.6 * r['raw_embed']
+            r['confidence'] = combined_conf
+            blended_results.append(r)
+
+        # Sort and truncate
+        sorted_results = sorted(blended_results, key=lambda x: x['confidence'], reverse=True)[:top_k]
 
         logging.debug("classify() results:")
         for r in sorted_results:
-            logging.debug(f"  → {r['common_name']} ({r['confidence']:.4f}) via {r['method']}")
+            logging.debug(f"  → {r['common_name']} ({r['confidence']:.4f}) via blend: fc={r['raw_fc']:.4f}, embed={r['raw_embed']:.4f}")
 
         return sorted_results
 
@@ -101,25 +120,26 @@ class FishClassifier:
         values, indices = torch.sort(distances)
 
         results = []
-        for i in range(min(top_k, len(indices))):
-            idx = indices[i].item()
+        for idx in indices[:top_k]:
+            idx = idx.item()
             id_entry = db_ids[idx]
             internal_id = id_entry if isinstance(id_entry, int) else id_entry[0]
-            confidence = self._distance_to_confidence(distances[idx].item())
+            distance_val = distances[idx].item()
 
             category = self.indexes['categories'].get(str(internal_id), {'name': 'Unknown', 'species_id': 'unknown'})
+            confidence = self._distance_to_confidence(distance_val)
+
+            print(f"[DEBUG] Distance to {category['name']} ({category['species_id']}): {distance_val:.4f}, confidence={confidence:.4f}")
+
             results.append({
                 'name': category['name'],
                 'species_id': category['species_id'],
                 'accuracy': confidence,
-                'distance': distances[idx].item()
+                'distance': distance_val
             })
 
         return results
 
     def _distance_to_confidence(self, distance: float) -> float:
-        min_dist = 3.5
-        max_dist = self.threshold
-        delta = max_dist - min_dist
-        scaled = 1.0 - (max(min(max_dist, distance), min_dist) - min_dist) / delta
-        return max(0.01, scaled)
+        # return float(1 / (1 + math.exp(1.0 * (distance - 8.0))))  # Slower dropoff, midpoint=8
+        return max(0.01, 1.0 - min(distance / 15.0, 0.99))
