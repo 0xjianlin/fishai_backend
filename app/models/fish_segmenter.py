@@ -24,7 +24,7 @@ class FishSegmenter:
         self.min_size = 800
         self.max_size = 1333
         self.score_threshold = 0.3
-        self.mask_threshold = 0.5
+        self.mask_threshold = 0.3  # Lowered from 0.5 for better detection
         self.nms_threshold = 0.9
 
         elapsed = time.time() - start_time
@@ -37,11 +37,12 @@ class FishSegmenter:
         with torch.no_grad():
             segm_output = self.model(img_tensor)
 
-        masks_and_polygons = self._convert_output_to_masks_and_polygons(
-            segm_output, resized_img, scales
-        )
-
+        masks_and_polygons = self._convert_output_to_masks_and_polygons(segm_output, resized_img, scales)
         polygons, masks = self._process_output(masks_and_polygons)
+
+        if not polygons:
+            logging.warning("[SEGMENTER] No valid fish regions detected. Optionally fallback to full image classification.")
+
         return polygons, masks
 
     def _resize_image(self, image_np):
@@ -59,6 +60,7 @@ class FishSegmenter:
 
     def _convert_output_to_masks_and_polygons(self, mask_rcnn_output, resized_img, scales):
         boxes, classes, masks, scores, img_size = mask_rcnn_output
+
         boxes = boxes[0] if isinstance(boxes, tuple) else boxes
         classes = classes[0] if isinstance(classes, tuple) else classes
         masks = masks[0] if isinstance(masks, tuple) else masks
@@ -71,10 +73,7 @@ class FishSegmenter:
             if scores[i] <= self.score_threshold:
                 continue
 
-            if isinstance(boxes[i], torch.Tensor):
-                x1, y1, x2, y2 = [int(v) for v in boxes[i].tolist()]
-            else:
-                x1, y1, x2, y2 = [int(v) for v in boxes[i]]
+            x1, y1, x2, y2 = [int(v) for v in boxes[i].tolist()] if isinstance(boxes[i], torch.Tensor) else [int(v) for v in boxes[i]]
             mask_h, mask_w = y2 - y1, x2 - x1
 
             mask = masks[i, 0, :, :]
@@ -83,23 +82,16 @@ class FishSegmenter:
 
             contours = self._bitmap_to_polygon(mask)
             if len(contours) < 1:
+                logging.warning("[SEGMENTER] No contours found for mask %d, skipping.", i)
                 continue
+
+            logging.debug(f"[SEGMENTER] Contour 0 size for mask {i}: {len(contours[0])}")
 
             polygon = self._rescale_polygon_to_src_size(contours[0], (x1, y1), scales)
-
-            if len(polygon) < 4:
-                logging.warning("Skipping polygon with fewer than 4 points.")
-                continue
-
-            try:
-                if not Polygon(polygon).is_valid:
-                    logging.warning("Skipping invalid polygon.")
-                    continue
-            except Exception as e:
-                logging.warning(f"Polygon validation error: {e}")
-                continue
-
             processed.append([mask, polygon])
+
+            # Optional debug output
+            cv2.imwrite(f"debug_mask_{i}.png", mask)
 
         return processed
 
@@ -114,7 +106,6 @@ class FishSegmenter:
                 continue
 
         poly_instances.sort(key=lambda x: x[0].area, reverse=True)
-
         keep_indices = [0]
         for i in range(1, len(poly_instances)):
             keep = True
@@ -131,15 +122,15 @@ class FishSegmenter:
 
     def _paste_mask(self, masks, img_h, img_w):
         device = masks.device
-        return F.interpolate(masks, size=(img_h, img_w), mode='bilinear', align_corners=False)
+        masks = F.interpolate(masks, size=(img_h, img_w), mode='bilinear', align_corners=False)
+        return masks
 
     def _bitmap_to_polygon(self, bitmap):
         contours, _ = cv2.findContours(bitmap, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        return [contour.reshape(-1, 2).tolist() for contour in contours if len(contour) >= 4]
+        return [contour.reshape(-1, 2).tolist() for contour in contours]
 
     def _rescale_polygon_to_src_size(self, poly, start_point, scales):
-        return [[int((start_point[0] + point[0]) * scales[0]), 
-                 int((start_point[1] + point[1]) * scales[1])] for point in poly]
+        return [[int((start_point[0] + point[0]) * scales[0]), int((start_point[1] + point[1]) * scales[1])] for point in poly]
 
     def _poly_array_to_dict(self, poly):
         result = {}
