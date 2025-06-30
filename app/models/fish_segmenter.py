@@ -90,9 +90,6 @@ class FishSegmenter:
             polygon = self._rescale_polygon_to_src_size(contours[0], (x1, y1), scales)
             processed.append([mask, polygon])
 
-            # Optional debug output
-            cv2.imwrite(f"debug_mask_{i}.png", mask)
-
         return processed
 
     def _process_output(self, output):
