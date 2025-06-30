@@ -28,16 +28,54 @@ def get_file_extension(url):
 #     return response.json()
 
 # Load categories.json
-with open('D:/Fishing-AI/fishai_backend/models/classification/categories.json', 'r', encoding='utf-8') as f:
-    categories = json.load(f)["categories"]
+# with open('D:/Fishing-AI/fishai_backend/models/classification/categories_california.json', 'r', encoding='utf-8') as f:
+#     categories = json.load(f)["categories"]
 
-updated_categories = {}
+# updated_categories = []
 
-for idx, info in categories.items():
-    if info.get('name', '') == info.get('species_id', ''):
-        print(info.get('name', ''))
+# for root, dirs, files in os.walk("D:/data_for_california_fish"):
+#     for file in files:
+#         directory = os.path.basename(root)
+#         updated_categories.append({
+#             'filename': directory + "/" + file,
+#             'species_id': directory,
+#         })
+#         # for directory in dirs:
+#         #     if directory == info['name']:
+#         #         os.rename(os.path.join(root, directory), os.path.join(root, info['species_id']))
 
-# with open('D:/Fishing-AI/fishai_backend/models/classification/categories_california.json', 'w', encoding='utf-8') as f:
+# with open('D:/Fishing-AI/fishai_backend/models/classification/data_train.json', 'w', encoding='utf-8') as f:
 #     json.dump(updated_categories, f, ensure_ascii=False, indent=4)
 
-print("Done")
+# # print("Done")
+
+
+import os
+import json
+
+# Path to your data folder
+data_root = r"D:\data_for_california_fish"  # change this if needed
+
+# Output path for the annotation file
+output_json = os.path.join(data_root, "data_train.json")
+
+# Supported image extensions
+image_extensions = (".jpg", ".jpeg", ".png")
+
+annotations = []
+
+for species_name in os.listdir(data_root):
+    species_dir = os.path.join(data_root, species_name)
+    if os.path.isdir(species_dir):
+        for img_file in os.listdir(species_dir):
+            if img_file.lower().endswith(image_extensions):
+                annotations.append({
+                    "file_name": f"{species_name}/{img_file}",
+                    "species_id": species_name
+                })
+
+# Save to JSON
+with open(output_json, "w") as f:
+    json.dump(annotations, f, indent=2)
+
+print(f"✅ Created {len(annotations)} annotations in {output_json}")

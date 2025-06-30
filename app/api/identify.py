@@ -17,15 +17,13 @@ BASE_DIR = Path(__file__).parent.parent.parent.resolve()
 
 router = APIRouter()
 
-# Configure logging
 logging.basicConfig(level=getattr(logging, settings.LOG_LEVEL))
 
-# Load regulations.json
 reg_path = BASE_DIR / "references" / "regulation" / "regulations.json"
 with open(reg_path, 'r', encoding='utf-8') as f:
     REGULATIONS = json.load(f)["regulations"]
 
-categories_path = BASE_DIR / "models" / "classification" / "categories.json"
+categories_path = BASE_DIR / "models" / "classification" / "categories_california.json"
 with open(categories_path, 'r', encoding='utf-8') as f:
     CATEGORIES = json.load(f)
 
@@ -38,7 +36,7 @@ def find_regulation(common_name, scientific_name):
     except Exception as e:
         logging.error(f"Error in find_regulation: {e}")
         return {}
-    
+
 def find_category(common_name, scientific_name):
     try:
         for cat in CATEGORIES['categories'].values():
@@ -51,58 +49,53 @@ def find_category(common_name, scientific_name):
 
 @router.post("/identify")
 async def detect_and_classify_batch(files: List[UploadFile] = File(...)):
-    """
-    Batch endpoint: Detect and classify fish in multiple images.
-    Returns results grouped per image.
-    """
     if state.classifier is None or state.segmenter is None:
         raise HTTPException(status_code=503, detail="AI models not loaded")
-    
+
     batch_results = []
     for file in files:
         file_start = time.time()
         if not file.content_type.startswith('image/'):
             batch_results.append({"error": "File must be an image", "filename": file.filename})
             continue
-        
+
         try:
-            # Read image data
-            read_start = time.time()
             image_data = await file.read()
-            image = Image.open(io.BytesIO(image_data))
+            image = Image.open(io.BytesIO(image_data)).convert("RGB")
             image_np = np.array(image)
-            read_time = time.time() - read_start
-            print(f"[TIMING] Image read for {file.filename}: {read_time:.2f} seconds")
-            
+
+            print(f"[DEBUG] Processing {file.filename}, shape={image_np.shape}")
+
             if len(image_np.shape) != 3:
                 batch_results.append({"error": "Image must be RGB", "filename": file.filename})
                 continue
-            
-            # Process image for fish detection
-            seg_start = time.time()
+
             polygons, masks = state.segmenter.segment(image_np)
-            seg_time = time.time() - seg_start
-            print(f"[TIMING] Segmentation for {file.filename}: {seg_time:.2f} seconds")
+            print(f"[DEBUG] Segmented {len(polygons)} fish in {file.filename}")
+
             results = []
-            
             for i, (polygon, mask) in enumerate(zip(polygons, masks)):
                 try:
                     fish_region = extract_fish_region(image_np, mask)
+                    print(f"[DEBUG] Fish region shape: {fish_region.shape}")
                     if fish_region.shape[0] < 50 or fish_region.shape[1] < 50:
+                        print(f"[DEBUG] Skipping small fish region in {file.filename}")
                         continue
-                    
-                    # Classify fish
-                    cls_start = time.time()
+
                     classifications = state.classifier.classify(fish_region, top_k=10)
-                    cls_time = time.time() - cls_start
-                    print(f"[TIMING] Classification for fish {i} in {file.filename}: {cls_time:.2f} seconds")
-                    
-                    # Calculate bounding box
+
+                    if not classifications or all(c['common_name'] == "Unknown" for c in classifications):
+                        print(f"[DEBUG] No valid classification for fish {i} in {file.filename}")
+
+                    print(f"[DEBUG] Classifications for fish {i} in {file.filename}:")
+                    for c in classifications:
+                        print(f"  → {c['common_name']} ({c['confidence']:.4f}) via {c['method']}")
+
                     points = [(polygon[f"x{j+1}"], polygon[f"y{j+1}"]) for j in range(len(polygon)//2)]
                     points = np.array(points)
                     x1, y1 = points.min(axis=0)
                     x2, y2 = points.max(axis=0)
-                    
+
                     results.append({
                         "fish_id": i,
                         "bounding_box": {
@@ -116,46 +109,45 @@ async def detect_and_classify_batch(files: List[UploadFile] = File(...)):
                 except Exception as e:
                     logging.error(f"Error processing fish {i}: {e}")
                     continue
-            file_time = time.time() - file_start
-            print(f"[TIMING] Total processing for {file.filename}: {file_time:.2f} seconds")
+
             batch_results.append({
                 "filename": file.filename,
                 "success": True,
                 "total_fish_detected": len(results),
                 "detections": results
             })
-            
+
         except Exception as e:
             batch_results.append({"error": str(e), "filename": file.filename})
 
-    # Process results and add regulations
     ret_results = []
-    if len(batch_results) > 0:
-        for result in batch_results:
-            if 'success' not in result:
-                continue
-            unique_common_names = []
-            result_line = {
-                "filename": result['filename'],
-                "success": result['success'],
-                "total_fish_detected": result['total_fish_detected'],
-                "detections": []
-            }
-            for detection in result['detections']:
-                for classification in detection['classifications']:
-                    if classification['common_name'] not in unique_common_names and classification['common_name'] != "Unknown":
-                        unique_common_names.append(classification['common_name'])
-                        regulation = find_regulation(classification['common_name'], classification['scientific_name'])
-                        category = find_category(classification['common_name'], classification['scientific_name'])
-                        result_line['detections'].append({
-                            "common_name": classification['common_name'],
-                            "scientific_name": classification['scientific_name'],
-                            "confidence": classification['confidence'],
-                            "image_url": category.get('image_url', ''),
-                            "more_info": regulation
-                        })
-            ret_results.append(result_line)
-    
+    for result in batch_results:
+        if 'success' not in result:
+            continue
+        unique_common_names = []
+        result_line = {
+            "filename": result['filename'],
+            "success": result['success'],
+            "total_fish_detected": result['total_fish_detected'],
+            "detections": []
+        }
+        for detection in result['detections']:
+            for classification in detection['classifications']:
+                if classification['common_name'] not in unique_common_names and classification['common_name'] != "Unknown":
+                    unique_common_names.append(classification['common_name'])
+                    regulation = find_regulation(classification['common_name'], classification['scientific_name'])
+                    category = find_category(classification['common_name'], classification['scientific_name'])
+                    result_line['detections'].append({
+                        "common_name": classification['common_name'],
+                        "scientific_name": classification['scientific_name'],
+                        "confidence": classification['confidence'],
+                        "image_url": category.get('image_url', ''),
+                        "more_info": regulation
+                    })
+        if not result_line['detections']:
+            print(f"[INFO] No confident classifications found for {result['filename']}")
+        ret_results.append(result_line)
+
     return {"success": True, "results": ret_results}
 
 @router.get("/species")
@@ -187,23 +179,3 @@ async def get_species_list():
     except Exception as e:
         logging.error(f"Error getting species list: {e}")
         raise HTTPException(status_code=500, detail=str(e))
-
-# @router.get("/images")
-# async def list_uploaded_images(max_results: int = 50):
-#     """List images uploaded to Cloudinary"""
-#     try:
-#         result = cloudinary_service.list_images(max_results)
-#         return result
-#     except Exception as e:
-#         logging.error(f"Error listing images: {e}")
-#         raise HTTPException(status_code=500, detail=str(e))
-
-# @router.delete("/images/{public_id}")
-# async def delete_image(public_id: str):
-#     """Delete an image from Cloudinary"""
-#     try:
-#         result = cloudinary_service.delete_image(public_id)
-#         return result
-#     except Exception as e:
-#         logging.error(f"Error deleting image: {e}")
-#         raise HTTPException(status_code=500, detail=str(e))

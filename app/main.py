@@ -64,7 +64,7 @@ async def startup_event():
         state.classifier = FishClassifier(
             model_path=str(model_paths["classification_model.ts"]),
             data_set_path=str(model_paths["embedding_database.pt"]), 
-            indexes_path=str(BASE_DIR / "models" / "classification" / "categories.json"),
+            indexes_path=str(BASE_DIR / "models" / "classification" / "categories_california.json"),
             device=get_device()
         )
         
