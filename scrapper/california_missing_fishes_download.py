@@ -7,9 +7,9 @@ import base64
 import re
 
 # Configuration
-EXCEL_DIR = "D:/california-missing-fishes"  # Directory containing Excel files
-OUTPUT_BASE_DIR = "D:/california-missing-fishes"  # Base directory for downloaded images
-MAX_IMAGES_PER_FILE = 100
+EXCEL_DIR = "D:/data_for_california_fish/missing/New Folder"  # Directory containing Excel files
+OUTPUT_BASE_DIR = "D:/data_for_california_fish/missing/New Folder"  # Base directory for downloaded images
+MAX_IMAGES_PER_FILE = 200
 IMG_URL_COL = 'YQ4gaf src'
 SPECIES_NAME_COL = 'toI8Rb'
 

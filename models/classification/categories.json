@@ -1,2572 +1,334 @@
 {
   "categories": {
-    "0": {
-      "name": "Freshwater bream",
-      "species_id": "Abramis brama",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052428/fishial_ai/Freshwater_bream.jpg",
-      "location": ""
-    },
-    "1": {
-      "name": "Sergeant major",
-      "species_id": "Abudefduf saxatilis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052522/fishial_ai/Sergeant_major.jpg",
-      "location": ""
-    },
-    "2": {
-      "name": "Atlantic wahoo",
-      "species_id": "Acanthocybium solandri",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052527/fishial_ai/Atlantic_wahoo.jpg",
-      "location": ""
-    },
-    "3": {
-      "name": "Yellowfin bream",
-      "species_id": "Acanthopagrus australis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052457/fishial_ai/Yellowfin_bream.jpg",
-      "location": ""
-    },
-    "4": {
-      "name": "Black bream",
-      "species_id": "Acanthopagrus butcheri",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052536/fishial_ai/Black_bream.jpg",
-      "location": ""
-    },
-    "5": {
-      "name": "Scrawled cowfish",
-      "species_id": "Acanthostracion quadricornis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052463/fishial_ai/Scrawled_cowfish.jpg",
-      "location": ""
-    },
-    "6": {
-      "name": "Doctorfish",
-      "species_id": "Acanthurus chirurgus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751261155/fish_images/hcy06nqoy4tzdzsqrsos.webp",
-      "location": ""
-    },
-    "7": {
-      "name": "Lake sturgeon",
-      "species_id": "Acipenser fulvescens",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052469/fishial_ai/Lake_sturgeon.jpg",
-      "location": ""
-    },
-    "8": {
-      "name": "White sturgeon",
-      "species_id": "Acipenser transmontanus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052474/fishial_ai/White_sturgeon.jpg",
-      "location": ""
-    },
-    "9": {
-      "name": "Lesser guitarfish",
-      "species_id": "Acroteriobatus annulatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052563/fishial_ai/Lesser_guitarfish.jpg",
-      "location": ""
-    },
-    "10": {
-      "name": "Spotted eagle ray",
-      "species_id": "Aetobatus narinari",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052569/fishial_ai/Spotted_eagle_ray.jpg",
-      "location": ""
-    },
-    "11": {
-      "name": "Bonefish",
-      "species_id": "Albula vulpes",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052574/fishial_ai/Bonefish.jpg",
-      "location": ""
-    },
-    "12": {
-      "name": "Yellow-eye mullet",
-      "species_id": "Aldrichetta forsteri",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052579/fishial_ai/Yellow-eye_mullet.jpg",
-      "location": ""
-    },
-    "13": {
-      "name": "African pompano",
-      "species_id": "Alectis ciliaris",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052584/fishial_ai/African_pompano.jpg",
-      "location": ""
-    },
-    "14": {
-      "name": "Skipjack herring",
-      "species_id": "Alosa chrysochloris",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052589/fishial_ai/Skipjack_herring.jpg",
-      "location": ""
-    },
-    "15": {
-      "name": "American shad",
-      "species_id": "Alosa sapidissima",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052593/fishial_ai/American_shad.jpg",
-      "location": ""
-    },
-    "16": {
-      "name": "Scrawled filefish",
-      "species_id": "Aluterus scriptus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052598/fishial_ai/Scrawled_filefish.jpg",
-      "location": ""
-    },
-    "17": {
-      "name": "Rock bass",
-      "species_id": "Ambloplites rupestris",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052603/fishial_ai/Rock_bass.jpg",
-      "location": ""
-    },
-    "18": {
-      "name": "White catfish",
-      "species_id": "Ameiurus catus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052607/fishial_ai/White_catfish.jpg",
-      "location": ""
-    },
-    "19": {
-      "name": "Black bullhead",
-      "species_id": "Ameiurus melas",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052612/fishial_ai/Black_bullhead.jpg",
-      "location": ""
-    },
-    "20": {
-      "name": "Yellow bullhead",
-      "species_id": "Ameiurus natalis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052616/fishial_ai/Yellow_bullhead.jpg",
-      "location": ""
-    },
-    "21": {
-      "name": "Brown bullhead",
-      "species_id": "Ameiurus nebulosus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052620/fishial_ai/Brown_bullhead.jpg",
-      "location": ""
-    },
-    "22": {
-      "name": "Bowfin",
-      "species_id": "Amia calva",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052625/fishial_ai/Bowfin.jpg",
-      "location": ""
-    },
-    "23": {
-      "name": "Barred surfperch",
-      "species_id": "Amphistichus argenteus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751261324/fish_images/lhts2yjg8bre4uwhkdtc.webp",
-      "location": ""
-    },
-    "24": {
-      "name": "European eel",
-      "species_id": "Anguilla anguilla",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052635/fishial_ai/European_eel.jpg",
-      "location": ""
-    },
-    "25": {
-      "name": "Speckled longfin eel",
-      "species_id": "Anguilla reinhardtii",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052639/fishial_ai/Speckled_longfin_eel.jpg",
-      "location": ""
-    },
-    "26": {
-      "name": "American eel",
-      "species_id": "Anguilla rostrata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052644/fishial_ai/American_eel.jpg",
-      "location": ""
-    },
-    "27": {
-      "name": "White margate",
-      "species_id": "Anisotremus surinamensis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052650/fishial_ai/White_margate.jpg",
-      "location": ""
-    },
-    "28": {
-      "name": "Porkfish",
-      "species_id": "Anisotremus virginicus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052654/fishial_ai/Porkfish.jpg",
-      "location": ""
-    },
-    "29": {
-      "name": "Freshwater drum",
-      "species_id": "Aplodinotus grunniens",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052659/fishial_ai/Freshwater_drum.jpg",
-      "location": ""
-    },
-    "30": {
-      "name": "Sheepshead",
-      "species_id": "Archosargus probatocephalus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052664/fishial_ai/Sheepshead.jpg",
-      "location": ""
-    },
-    "31": {
-      "name": "Hardhead Catfish",
-      "species_id": "Ariopsis felis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052668/fishial_ai/Hardhead_Catfish.jpg",
-      "location": ""
-    },
-    "32": {
-      "name": "Australian Salmon",
-      "species_id": "Arripis trutta",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052673/fishial_ai/Australian_Salmon.jpg",
-      "location": ""
-    },
-    "33": {
-      "name": "Western Australian Salmon",
-      "species_id": "Arripis truttacea",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052678/fishial_ai/Western_Australian_Salmon.jpg",
-      "location": ""
-    },
-    "34": {
-      "name": "Oscar",
-      "species_id": "Astronotus ocellatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052682/fishial_ai/Oscar.jpg",
-      "location": ""
-    },
-    "35": {
-      "name": "Alligator Gar",
-      "species_id": "Atractosteus spatula",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052688/fishial_ai/Alligator_Gar.jpg",
-      "location": ""
-    },
-    "36": {
-      "name": "Gafftopsail Catfish",
-      "species_id": "Bagre marinus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052692/fishial_ai/Gafftopsail_Catfish.jpg",
-      "location": ""
-    },
-    "37": {
-      "name": "Gray Triggerfish",
-      "species_id": "Balistes capriscus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052697/fishial_ai/Gray_Triggerfish.jpg",
-      "location": ""
-    },
-    "38": {
-      "name": "Tinfoil Barb",
-      "species_id": "Barbonymus gonionotus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052702/fishial_ai/Tinfoil_Barb.jpg",
-      "location": ""
-    },
-    "39": {
-      "name": "Common barbel",
-      "species_id": "Barbus barbus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751261473/fish_images/egdpc6ev0xewlkbwmdat.webp",
-      "location": ""
-    },
-    "40": {
-      "name": "Garfish",
-      "species_id": "Belone belone",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052709/fishial_ai/Garfish.jpg",
-      "location": ""
-    },
-    "41": {
-      "name": "White Bream",
-      "species_id": "Blicca bjoerkna",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052713/fishial_ai/White_Bream.jpg",
-      "location": ""
-    },
-    "42": {
-      "name": "Spanish Hogfish",
-      "species_id": "Bodianus rufus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052719/fishial_ai/Spanish_Hogfish.jpg",
-      "location": ""
-    },
-    "43": {
-      "name": "Jolthead Porgy",
-      "species_id": "Calamus bajonado",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052726/fishial_ai/Jolthead_Porgy.jpg",
-      "location": ""
-    },
-    "44": {
-      "name": "Orangespotted Filefish",
-      "species_id": "Cantherhines pullus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052733/fishial_ai/Orangespotted_Filefish.jpg",
-      "location": ""
-    },
-    "45": {
-      "name": "Sharpnose Puffer",
-      "species_id": "Canthigaster rostrata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052739/fishial_ai/Sharpnose_Puffer.jpg",
-      "location": ""
-    },
-    "46": {
-      "name": "Yellow Jack",
-      "species_id": "Carangoides bartholomaei",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052743/fishial_ai/Yellow_Jack.jpg",
-      "location": ""
-    },
-    "47": {
-      "name": "Pacific Crevalle Jack",
-      "species_id": "Caranx caninus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052748/fishial_ai/Pacific_Crevalle_Jack.jpg",
-      "location": ""
-    },
-    "48": {
-      "name": "Blue Runner",
-      "species_id": "Caranx crysos",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052755/fishial_ai/Blue_Runner.jpg",
-      "location": ""
-    },
-    "49": {
-      "name": "Crevalle Jack",
-      "species_id": "Caranx hippos",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052761/fishial_ai/Crevalle_Jack.jpg",
-      "location": ""
-    },
-    "50": {
-      "name": "Giant Trevally",
-      "species_id": "Caranx ignobilis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052765/fishial_ai/Giant_Trevally.jpg",
-      "location": ""
-    },
-    "51": {
-      "name": "Horse-eye jack",
-      "species_id": "Caranx latus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751261563/fish_images/u1ma6tkd8ngsneqrspy4.jpg",
-      "location": ""
-    },
-    "52": {
-      "name": "Black Jack",
-      "species_id": "Caranx lugubris",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052773/fishial_ai/Black_Jack.jpg",
-      "location": ""
-    },
-    "53": {
-      "name": "Bluefin Trevally",
-      "species_id": "Caranx melampygus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052778/fishial_ai/Bluefin_Trevally.jpg",
-      "location": ""
-    },
-    "54": {
-      "name": "Brassy Trevally",
-      "species_id": "Caranx papuensis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052783/fishial_ai/Brassy_Trevally.jpg",
-      "location": ""
-    },
-    "55": {
-      "name": "Bar Jack",
-      "species_id": "Caranx ruber",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052788/fishial_ai/Bar_Jack.jpg",
-      "location": ""
-    },
-    "56": {
-      "name": "Bigeye Trevally",
-      "species_id": "Caranx sexfasciatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052794/fishial_ai/Bigeye_Trevally.jpg",
-      "location": ""
-    },
-    "57": {
-      "name": "Goldfish",
-      "species_id": "Carassius auratus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052799/fishial_ai/Goldfish.jpg",
-      "location": ""
-    },
-    "58": {
-      "name": "Crucian Carp",
-      "species_id": "Carassius carassius",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052803/fishial_ai/Crucian_Carp.jpg",
-      "location": ""
-    },
-    "59": {
-      "name": "Bull Shark",
-      "species_id": "Carcharhinus leucas",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052808/fishial_ai/Bull_Shark.jpg",
-      "location": ""
-    },
-    "60": {
-      "name": "Blacktip Shark",
-      "species_id": "Carcharhinus limbatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052813/fishial_ai/Blacktip_Shark.jpg",
-      "location": ""
-    },
-    "61": {
-      "name": "Blacktip Reef Shark",
-      "species_id": "Carcharhinus melanopterus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052818/fishial_ai/Blacktip_Reef_Shark.jpg",
-      "location": ""
-    },
-    "62": {
-      "name": "Dusky Shark",
-      "species_id": "Carcharhinus obscurus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052823/fishial_ai/Dusky_Shark.jpg",
-      "location": ""
-    },
-    "63": {
-      "name": "Sandbar Shark",
-      "species_id": "Carcharhinus plumbeus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052828/fishial_ai/Sandbar_Shark.jpg",
-      "location": ""
-    },
-    "64": {
-      "name": "Sand Tiger Shark",
-      "species_id": "Carcharias taurus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052833/fishial_ai/Sand_Tiger_Shark.jpg",
-      "location": ""
-    },
-    "65": {
-      "name": "Great White Shark",
-      "species_id": "Carcharodon carcharias",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052838/fishial_ai/Great_White_Shark.jpg",
-      "location": ""
-    },
-    "66": {
-      "name": "River Carpsucker",
-      "species_id": "Carpiodes carpio",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052843/fishial_ai/River_Carpsucker.jpg",
-      "location": ""
-    },
-    "67": {
-      "name": "Longnose Sucker",
-      "species_id": "Catostomus catostomus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052848/fishial_ai/Longnose_Sucker.jpg",
-      "location": ""
-    },
-    "68": {
-      "name": "White Sucker",
-      "species_id": "Catostomus commersonii",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052853/fishial_ai/White_Sucker.jpg",
-      "location": ""
-    },
-    "69": {
-      "name": "Flier",
-      "species_id": "Centrarchus macropterus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052858/fishial_ai/Flier.jpg",
-      "location": ""
-    },
-    "70": {
-      "name": "Common Snook",
-      "species_id": "Centropomus undecimalis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052862/fishial_ai/Common_Snook.jpg",
-      "location": ""
-    },
-    "71": {
-      "name": "Black Sea Bass",
-      "species_id": "Centropristis striata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052867/fishial_ai/Black_Sea_Bass.jpg",
-      "location": ""
-    },
-    "72": {
-      "name": "Peacock Hind",
-      "species_id": "Cephalopholis argus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052872/fishial_ai/Peacock_Hind.jpg",
-      "location": ""
-    },
-    "73": {
-      "name": "Graysby",
-      "species_id": "Cephalopholis cruentata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052876/fishial_ai/Graysby.jpg",
-      "location": ""
-    },
-    "74": {
-      "name": "Coral Hind",
-      "species_id": "Cephalopholis miniata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052882/fishial_ai/Coral_Hind.jpg",
-      "location": ""
-    },
-    "75": {
-      "name": "Atlantic Spadefish",
-      "species_id": "Chaetodipterus faber",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052886/fishial_ai/Atlantic_Spadefish.jpg",
-      "location": ""
-    },
-    "76": {
-      "name": "Northern Snakehead",
-      "species_id": "Channa argus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052891/fishial_ai/Northern_Snakehead.jpg",
-      "location": ""
-    },
-    "77": {
-      "name": "Bullseye Snakehead",
-      "species_id": "Channa aurolineata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052896/fishial_ai/Bullseye_Snakehead.jpg",
-      "location": ""
-    },
-    "78": {
-      "name": "Giant Snakehead",
-      "species_id": "Channa micropeltes",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052902/fishial_ai/Giant_Snakehead.jpg",
-      "location": ""
-    },
-    "79": {
-      "name": "Striped Snakehead",
-      "species_id": "Channa striata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052907/fishial_ai/Striped_Snakehead.jpg",
-      "location": ""
-    },
-    "80": {
-      "name": "Humphead Wrasse",
-      "species_id": "Cheilinus undulatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052913/fishial_ai/Humphead_Wrasse.jpg",
-      "location": ""
-    },
-    "81": {
-      "name": "Cigar Wrasse",
-      "species_id": "Cheilio inermis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052918/fishial_ai/Cigar_Wrasse.jpg",
-      "location": ""
-    },
-    "82": {
-      "name": "Clown Knifefish",
-      "species_id": "Chitala ornata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052923/fishial_ai/Clown_Knifefish.jpg",
-      "location": ""
-    },
-    "83": {
-      "name": "Atlantic Bumper",
-      "species_id": "Chloroscombrus chrysurus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052927/fishial_ai/Atlantic_Bumper.jpg",
-      "location": ""
-    },
-    "84": {
-      "name": "Roman Seabream",
-      "species_id": "Chrysoblephus laticeps",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052932/fishial_ai/Roman_Seabream.jpg",
-      "location": ""
-    },
-    "85": {
-      "name": "Peacock Bass",
-      "species_id": "Cichla ocellaris",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052937/fishial_ai/Peacock_Bass.jpg",
-      "location": ""
-    },
-    "86": {
-      "name": "Walking catfish",
-      "species_id": "Clarias batrachus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751261651/fish_images/zj8jn3utfctpcqa4nmqy.jpg",
-      "location": ""
-    },
-    "87": {
-      "name": "African Sharptooth Catfish",
-      "species_id": "Clarias gariepinus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052943/fishial_ai/African_Sharptooth_Catfish.jpg",
-      "location": ""
-    },
-    "88": {
-      "name": "Atlantic Herring",
-      "species_id": "Clupea harengus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052948/fishial_ai/Atlantic_Herring.jpg",
-      "location": ""
-    },
-    "89": {
-      "name": "Estuarine Catfish",
-      "species_id": "Cnidoglanis macrocephalus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052952/fishial_ai/Estuarine_Catfish.jpg",
-      "location": ""
-    },
-    "90": {
-      "name": "European Conger Eel",
-      "species_id": "Conger conger",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052958/fishial_ai/European_Conger_Eel.jpg",
-      "location": ""
-    },
-    "91": {
-      "name": "Redbreast Tilapia",
-      "species_id": "Coptodon rendalli",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052962/fishial_ai/Redbreast_Tilapia.jpg",
-      "location": ""
-    },
-    "92": {
-      "name": "Redbelly Tilapia",
-      "species_id": "Coptodon zillii",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052968/fishial_ai/Redbelly_Tilapia.jpg",
-      "location": ""
-    },
-    "93": {
-      "name": "Lake Whitefish",
-      "species_id": "Coregonus clupeaformis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052974/fishial_ai/Lake_Whitefish.jpg",
-      "location": ""
-    },
-    "94": {
-      "name": "Mahi-mahi",
-      "species_id": "Coryphaena hippurus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751264607/fish_images/hj0sgda9r4vmj0nkhsbf.jpg",
-      "location": ""
-    },
-    "95": {
-      "name": "Goldsinny Wrasse",
-      "species_id": "Ctenolabrus rupestris",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052980/fishial_ai/Goldsinny_Wrasse.jpg",
-      "location": ""
-    },
-    "96": {
-      "name": "Grass Carp",
-      "species_id": "Ctenopharyngodon idella",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052985/fishial_ai/Grass_Carp.jpg",
-      "location": ""
-    },
-    "97": {
-      "name": "Shiner Perch",
-      "species_id": "Cymatogaster aggregata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052990/fishial_ai/Shiner_Perch.jpg",
-      "location": ""
-    },
-    "98": {
-      "name": "Spotted Seatrout",
-      "species_id": "Cynoscion nebulosus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052996/fishial_ai/Spotted_Seatrout.jpg",
-      "location": ""
-    },
-    "99": {
-      "name": "Weakfish",
-      "species_id": "Cynoscion regalis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751261781/fish_images/scpkfjxxzro3f8jmjsdd.webp",
-      "location": ""
-    },
-    "100": {
-      "name": "Spotfin Shiner",
-      "species_id": "Cyprinella spiloptera",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053003/fishial_ai/Spotfin_Shiner.jpg",
-      "location": ""
-    },
-    "101": {
-      "name": "Blacktail Shiner",
-      "species_id": "Cyprinella venusta",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053008/fishial_ai/Blacktail_Shiner.jpg",
-      "location": ""
-    },
-    "102": {
-      "name": "Common Carp",
-      "species_id": "Cyprinus carpio",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053016/fishial_ai/Common_Carp.jpg",
-      "location": "California"
-    },
-    "103": {
-      "name": "European carp",
-      "species_id": "Cyprinus carpio carpio",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751261853/fish_images/nurspqxtcltdvlscghjo.jpg",
-      "location": ""
-    },
-    "104": {
-      "name": "Koi carp",
-      "species_id": "Cyprinus rubrofuscus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751261935/fish_images/q7n8uczj5iykgdq0krzx.jpg",
-      "location": ""
-    },
-    "105": {
-      "name": "Common Stingray",
-      "species_id": "Dasyatis pastinaca",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053025/fishial_ai/Common_Stingray.jpg",
-      "location": ""
-    },
-    "106": {
-      "name": "Common Dentex",
-      "species_id": "Dentex dentex",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053030/fishial_ai/Common_Dentex.jpg",
-      "location": ""
-    },
-    "107": {
-      "name": "European Sea Bass",
-      "species_id": "Dicentrarchus labrax",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053036/fishial_ai/European_Sea_Bass.jpg",
-      "location": ""
-    },
-    "108": {
-      "name": "Galjoen",
-      "species_id": "Dichistius capensis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053041/fishial_ai/Galjoen.jpg",
-      "location": ""
-    },
-    "109": {
-      "name": "Sand Perch",
-      "species_id": "Diplectrum formosum",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053046/fishial_ai/Sand_Perch.jpg",
-      "location": ""
-    },
-    "110": {
-      "name": "Annular Seabream",
-      "species_id": "Diplodus annularis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053051/fishial_ai/Annular_Seabream.jpg",
-      "location": ""
-    },
-    "111": {
-      "name": "Cape White Seabream",
-      "species_id": "Diplodus capensis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053056/fishial_ai/Cape_White_Seabream.jpg",
-      "location": ""
-    },
-    "112": {
-      "name": "Sharpsnout Seabream",
-      "species_id": "Diplodus puntazzo",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053061/fishial_ai/Sharpsnout_Seabream.jpg",
-      "location": ""
-    },
-    "113": {
-      "name": "White Seabream",
-      "species_id": "Diplodus sargus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053065/fishial_ai/White_Seabream.jpg",
-      "location": ""
-    },
-    "114": {
-      "name": "Common two-banded seabream",
-      "species_id": "Diplodus vulgaris",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751261991/fish_images/g5fleilzttfvqovvffvz.webp",
-      "location": ""
-    },
-    "115": {
-      "name": "Gizzard Shad",
-      "species_id": "Dorosoma cepedianum",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053072/fishial_ai/Gizzard_Shad.jpg",
-      "location": ""
-    },
-    "116": {
-      "name": "Shark Sucker (Remora)",
-      "species_id": "Echeneis naucrates",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053078/fishial_ai/Shark_Sucker_%28Remora%29.jpg",
-      "location": ""
-    },
-    "117": {
-      "name": "Rainbow Runner",
-      "species_id": "Elagatis bipinnulata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053083/fishial_ai/Rainbow_Runner.jpg",
-      "location": ""
-    },
-    "118": {
-      "name": "Ladyfish",
-      "species_id": "Elops saurus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053087/fishial_ai/Ladyfish.jpg",
-      "location": ""
-    },
-    "119": {
-      "name": "Bluespotted Sunfish",
-      "species_id": "Enneacanthus gloriosus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053092/fishial_ai/Bluespotted_Sunfish.jpg",
-      "location": ""
-    },
-    "120": {
-      "name": "Banded Sunfish",
-      "species_id": "Enneacanthus obesus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053099/fishial_ai/Banded_Sunfish.jpg",
-      "location": ""
-    },
-    "121": {
-      "name": "Atlantic Spadefish",
-      "species_id": "Ephippion guttifer",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751052886/fishial_ai/Atlantic_Spadefish.jpg",
-      "location": ""
-    },
-    "122": {
-      "name": "Orange-spotted grouper",
-      "species_id": "Epinephelus coioides",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751262046/fish_images/bmnc4zoc1wkxt4wskn8f.webp",
-      "location": ""
-    },
-    "123": {
-      "name": "Blacktip Grouper",
-      "species_id": "Epinephelus fasciatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053112/fishial_ai/Blacktip_Grouper.jpg",
-      "location": ""
-    },
-    "124": {
-      "name": "Red Hind",
-      "species_id": "Epinephelus guttatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053117/fishial_ai/Red_Hind.jpg",
-      "location": ""
-    },
-    "125": {
-      "name": "Atlantic Goliath Grouper",
-      "species_id": "Epinephelus itajara",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053121/fishial_ai/Atlantic_Goliath_Grouper.jpg",
-      "location": ""
-    },
-    "126": {
-      "name": "Giant Grouper",
-      "species_id": "Epinephelus lanceolatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053126/fishial_ai/Giant_Grouper.jpg",
-      "location": ""
-    },
-    "127": {
-      "name": "Malabar Grouper",
-      "species_id": "Epinephelus malabaricus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053130/fishial_ai/Malabar_Grouper.jpg",
-      "location": ""
-    },
-    "128": {
-      "name": "Dusky Grouper",
-      "species_id": "Epinephelus marginatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053136/fishial_ai/Dusky_Grouper.jpg",
-      "location": ""
-    },
-    "129": {
-      "name": "Honeycomb Grouper",
-      "species_id": "Epinephelus merra",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053141/fishial_ai/Honeycomb_Grouper.jpg",
-      "location": ""
-    },
-    "130": {
-      "name": "Red Grouper",
-      "species_id": "Epinephelus morio",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053146/fishial_ai/Red_Grouper.jpg",
-      "location": ""
-    },
-    "131": {
-      "name": "Nassau Grouper",
-      "species_id": "Epinephelus striatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053151/fishial_ai/Nassau_Grouper.jpg",
-      "location": ""
-    },
-    "132": {
-      "name": "Greasy Grouper",
-      "species_id": "Epinephelus tauvina",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053156/fishial_ai/Greasy_Grouper.jpg",
-      "location": ""
-    },
-    "133": {
-      "name": "Potato Grouper",
-      "species_id": "Epinephelus tukula",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053161/fishial_ai/Potato_Grouper.jpg",
-      "location": ""
-    },
-    "134": {
-      "name": "Redfin Pickerel",
-      "species_id": "Esox americanus americanus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053166/fishial_ai/Redfin_Pickerel.jpg",
-      "location": ""
-    },
-    "135": {
-      "name": "Northern Pike",
-      "species_id": "Esox lucius",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053171/fishial_ai/Northern_Pike.jpg",
-      "location": ""
-    },
-    "136": {
-      "name": "Muskellunge",
-      "species_id": "Esox masquinongy",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053178/fishial_ai/Muskellunge.jpg",
-      "location": ""
-    },
-    "137": {
-      "name": "Tiger Muskie",
-      "species_id": "Esox masquinongy X Esox lucius",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053185/fishial_ai/Tiger_Muskie.jpg",
-      "location": ""
-    },
-    "138": {
-      "name": "Chain Pickerel",
-      "species_id": "Esox niger",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053192/fishial_ai/Chain_Pickerel.jpg",
-      "location": ""
-    },
-    "139": {
-      "name": "Little Tunny",
-      "species_id": "Euthynnus alletteratus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053197/fishial_ai/Little_Tunny.jpg",
-      "location": ""
-    },
-    "140": {
-      "name": "Atlantic Cod",
-      "species_id": "Gadus morhua",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053202/fishial_ai/Atlantic_Cod.jpg",
-      "location": ""
-    },
-    "141": {
-      "name": "Tiger Shark",
-      "species_id": "Galeocerdo cuvier",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053207/fishial_ai/Tiger_Shark.jpg",
-      "location": ""
-    },
-    "142": {
-      "name": "Tope Shark",
-      "species_id": "Galeorhinus galeus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053212/fishial_ai/Tope_Shark.jpg",
-      "location": ""
-    },
-    "143": {
-      "name": "Yellowfin Mojarra",
-      "species_id": "Gerres cinereus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053216/fishial_ai/Yellowfin_Mojarra.jpg",
-      "location": ""
-    },
-    "144": {
-      "name": "Nurse Shark",
-      "species_id": "Ginglymostoma cirratum",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053221/fishial_ai/Nurse_Shark.jpg",
-      "location": ""
-    },
-    "145": {
-      "name": "Golden Trevally",
-      "species_id": "Gnathanodon speciosus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053226/fishial_ai/Golden_Trevally.jpg",
-      "location": ""
-    },
-    "146": {
-      "name": "Gudgeon",
-      "species_id": "Gobio gobio",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053230/fishial_ai/Gudgeon.jpg",
-      "location": ""
-    },
-    "147": {
-      "name": "Dogtooth Tuna",
-      "species_id": "Gymnosarda unicolor",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053235/fishial_ai/Dogtooth_Tuna.jpg",
-      "location": ""
-    },
-    "148": {
-      "name": "White Grunt",
-      "species_id": "Haemulon plumierii",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053240/fishial_ai/White_Grunt.jpg",
-      "location": ""
-    },
-    "149": {
-      "name": "Hampala Barb",
-      "species_id": "Hampala macrolepidota",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053246/fishial_ai/Hampala_Barb.jpg",
-      "location": ""
-    },
-    "150": {
-      "name": "Texas Cichlid",
-      "species_id": "Herichthys cyanoguttatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053251/fishial_ai/Texas_Cichlid.jpg",
-      "location": ""
-    },
-    "151": {
-      "name": "Horn Shark",
-      "species_id": "Heterodontus francisci",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053255/fishial_ai/Horn_Shark.jpg",
-      "location": ""
-    },
-    "152": {
-      "name": "Port Jackson Shark",
-      "species_id": "Heterodontus portusjacksoni",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053260/fishial_ai/Port_Jackson_Shark.jpg",
-      "location": ""
-    },
-    "153": {
-      "name": "Goldeye",
-      "species_id": "Hiodon alosoides",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053265/fishial_ai/Goldeye.jpg",
-      "location": ""
-    },
-    "154": {
-      "name": "Mooneye",
-      "species_id": "Hiodon tergisus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053271/fishial_ai/Mooneye.jpg",
-      "location": ""
-    },
-    "155": {
-      "name": "Pacific Halibut",
-      "species_id": "Hippoglossus stenolepis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053275/fishial_ai/Pacific_Halibut.jpg",
-      "location": ""
-    },
-    "156": {
-      "name": "Southern Stingray",
-      "species_id": "Hypanus americanus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053280/fishial_ai/Southern_Stingray.jpg",
-      "location": ""
-    },
-    "157": {
-      "name": "Atlantic Stingray",
-      "species_id": "Hypanus sabinus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053285/fishial_ai/Atlantic_Stingray.jpg",
-      "location": ""
-    },
-    "158": {
-      "name": "Northern Hog Sucker",
-      "species_id": "Hypentelium nigricans",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053289/fishial_ai/Northern_Hog_Sucker.jpg",
-      "location": ""
-    },
-    "159": {
-      "name": "Silver Carp",
-      "species_id": "Hypophthalmichthys molitrix",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053294/fishial_ai/Silver_Carp.jpg",
-      "location": ""
-    },
-    "160": {
-      "name": "Bighead Carp",
-      "species_id": "Hypophthalmichthys nobilis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053299/fishial_ai/Bighead_Carp.jpg",
-      "location": ""
-    },
-    "161": {
-      "name": "Blue Catfish",
-      "species_id": "Ictalurus furcatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053303/fishial_ai/Blue_Catfish.jpg",
-      "location": ""
-    },
-    "162": {
-      "name": "Channel Catfish",
-      "species_id": "Ictalurus punctatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053309/fishial_ai/Channel_Catfish.jpg",
-      "location": "California"
-    },
-    "163": {
-      "name": "Smallmouth Buffalo",
-      "species_id": "Ictiobus bubalus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053314/fishial_ai/Smallmouth_Buffalo.jpg",
-      "location": ""
-    },
-    "164": {
-      "name": "Bigmouth Buffalo",
-      "species_id": "Ictiobus cyprinellus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053319/fishial_ai/Bigmouth_Buffalo.jpg",
-      "location": ""
-    },
-    "165": {
-      "name": "Atlantic Sailfish",
-      "species_id": "Istiophorus albicans",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053323/fishial_ai/Atlantic_Sailfish.jpg",
-      "location": ""
-    },
-    "166": {
-      "name": "Indo-Pacific sailfish",
-      "species_id": "Istiophorus platypterus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751262126/fish_images/opjpd8dsgzfisz23odez.webp",
-      "location": ""
-    },
-    "167": {
-      "name": "Striped Marlin",
-      "species_id": "Kajikia audax",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053330/fishial_ai/Striped_Marlin.jpg",
-      "location": ""
-    },
-    "168": {
-      "name": "Skipjack Tuna",
-      "species_id": "Katsuwonus pelamis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053335/fishial_ai/Skipjack_Tuna.jpg",
-      "location": ""
-    },
-    "169": {
-      "name": "Ballan Wrasse",
-      "species_id": "Labrus bergylta",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053340/fishial_ai/Ballan_Wrasse.jpg",
-      "location": ""
-    },
-    "170": {
-      "name": "Cuckoo Wrasse",
-      "species_id": "Labrus mixtus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053345/fishial_ai/Cuckoo_Wrasse.jpg",
-      "location": ""
-    },
-    "171": {
-      "name": "Hogfish",
-      "species_id": "Lachnolaimus maximus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053350/fishial_ai/Hogfish.jpg",
-      "location": ""
-    },
-    "172": {
-      "name": "Pinfish",
-      "species_id": "Lagodon rhomboides",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053355/fishial_ai/Pinfish.jpg",
-      "location": ""
-    },
-    "173": {
-      "name": "Barramundi",
-      "species_id": "Lates calcarifer",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053360/fishial_ai/Barramundi.jpg",
-      "location": ""
-    },
-    "174": {
-      "name": "Spot Croaker",
-      "species_id": "Leiostomus xanthurus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053365/fishial_ai/Spot_Croaker.jpg",
-      "location": ""
-    },
-    "175": {
-      "name": "Spotted Gar",
-      "species_id": "Lepisosteus oculatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053372/fishial_ai/Spotted_Gar.jpg",
-      "location": ""
-    },
-    "176": {
-      "name": "Longnose Gar",
-      "species_id": "Lepisosteus osseus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053377/fishial_ai/Longnose_Gar.jpg",
-      "location": ""
-    },
-    "177": {
-      "name": "Shortnose Gar",
-      "species_id": "Lepisosteus platostomus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053383/fishial_ai/Shortnose_Gar.jpg",
-      "location": ""
-    },
-    "178": {
-      "name": "Florida Gar",
-      "species_id": "Lepisosteus platyrhincus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053391/fishial_ai/Florida_Gar.jpg",
-      "location": ""
-    },
-    "179": {
-      "name": "Redbreast Sunfish",
-      "species_id": "Lepomis auritus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053396/fishial_ai/Redbreast_Sunfish.jpg",
-      "location": ""
-    },
-    "180": {
-      "name": "Green Sunfish",
-      "species_id": "Lepomis cyanellus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053402/fishial_ai/Green_Sunfish.jpg",
-      "location": ""
-    },
-    "181": {
-      "name": "Pumpkinseed",
-      "species_id": "Lepomis gibbosus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053407/fishial_ai/Pumpkinseed.jpg",
-      "location": "California"
-    },
-    "182": {
-      "name": "Warmouth",
-      "species_id": "Lepomis gulosus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053415/fishial_ai/Warmouth.jpg",
-      "location": ""
-    },
-    "183": {
-      "name": "Bluegill",
-      "species_id": "Lepomis macrochirus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053421/fishial_ai/Bluegill.jpg",
-      "location": "California"
-    },
-    "184": {
-      "name": "Dollar Sunfish",
-      "species_id": "Lepomis marginatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053426/fishial_ai/Dollar_Sunfish.jpg",
-      "location": ""
-    },
-    "185": {
-      "name": "Longear Sunfish",
-      "species_id": "Lepomis megalotis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053431/fishial_ai/Longear_Sunfish.jpg",
-      "location": ""
-    },
-    "186": {
-      "name": "Redear Sunfish",
-      "species_id": "Lepomis microlophus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053436/fishial_ai/Redear_Sunfish.jpg",
-      "location": ""
-    },
-    "187": {
-      "name": "Northern Sunfish",
-      "species_id": "Lepomis peltastes",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053440/fishial_ai/Northern_Sunfish.jpg",
-      "location": ""
-    },
-    "188": {
-      "name": "Spotted Sunfish",
-      "species_id": "Lepomis punctatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053445/fishial_ai/Spotted_Sunfish.jpg",
-      "location": ""
-    },
-    "189": {
-      "name": "Asp",
-      "species_id": "Leuciscus aspius",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053450/fishial_ai/Asp.jpg",
-      "location": ""
-    },
-    "190": {
-      "name": "Ide",
-      "species_id": "Leuciscus idus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053455/fishial_ai/Ide.jpg",
-      "location": ""
-    },
-    "191": {
-      "name": "Common Dace",
-      "species_id": "Leuciscus leuciscus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053460/fishial_ai/Common_Dace.jpg",
-      "location": ""
-    },
-    "192": {
-      "name": "leerfish",
-      "species_id": "Lichia amia",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751262183/fish_images/o8qffxpycsbmts6xbh8h.webp",
-      "location": ""
-    },
-    "193": {
-      "name": "White Steenbras",
-      "species_id": "Lithognathus lithognathus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053467/fishial_ai/White_Steenbras.jpg",
-      "location": ""
-    },
-    "194": {
-      "name": "Striped Seabream",
-      "species_id": "Lithognathus mormyrus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053472/fishial_ai/Striped_Seabream.jpg",
-      "location": ""
-    },
-    "195": {
-      "name": "Tripletail",
-      "species_id": "Lobotes surinamensis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053477/fishial_ai/Tripletail.jpg",
-      "location": ""
-    },
-    "196": {
-      "name": "Burbot",
-      "species_id": "Lota lota",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053481/fishial_ai/Burbot.jpg",
-      "location": ""
-    },
-    "197": {
-      "name": "Mutton Snapper",
-      "species_id": "Lutjanus analis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053486/fishial_ai/Mutton_Snapper.jpg",
-      "location": ""
-    },
-    "198": {
-      "name": "Schoolmaster Snapper",
-      "species_id": "Lutjanus apodus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053491/fishial_ai/Schoolmaster_Snapper.jpg",
-      "location": ""
-    },
-    "199": {
-      "name": "Mangrove Red Snapper",
-      "species_id": "Lutjanus argentimaculatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053496/fishial_ai/Mangrove_Red_Snapper.jpg",
-      "location": ""
-    },
-    "200": {
-      "name": "Yellow Snapper",
-      "species_id": "Lutjanus argentiventris",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053501/fishial_ai/Yellow_Snapper.jpg",
-      "location": ""
-    },
-    "201": {
-      "name": "Two-spot red snapper",
-      "species_id": "Lutjanus bohar",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053506/fishial_ai/Two-spot_red_snapper.jpg",
-      "location": ""
-    },
-    "202": {
-      "name": "Red Snapper",
-      "species_id": "Lutjanus campechanus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053510/fishial_ai/Red_Snapper.jpg",
-      "location": ""
-    },
-    "203": {
-      "name": "Spanish flag snapper",
-      "species_id": "Lutjanus carponotatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751264749/fish_images/d8e7p27pp9at7ofj6pgu.jpg",
-      "location": ""
-    },
-    "204": {
-      "name": "Lutjanus cyanopterus",
-      "species_id": "Lutjanus cyanopterus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053520/fishial_ai/Lutjanus_cyanopterus.jpg",
-      "location": ""
-    },
-    "205": {
-      "name": "Lutjanus decussatus",
-      "species_id": "Lutjanus decussatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053524/fishial_ai/Lutjanus_decussatus.jpg",
-      "location": ""
-    },
-    "206": {
-      "name": "Lutjanus fulviflamma",
-      "species_id": "Lutjanus fulviflamma",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053529/fishial_ai/Lutjanus_fulviflamma.jpg",
-      "location": ""
-    },
-    "207": {
-      "name": "Lutjanus fulvus",
-      "species_id": "Lutjanus fulvus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053534/fishial_ai/Lutjanus_fulvus.jpg",
-      "location": ""
-    },
-    "208": {
-      "name": "Lutjanus gibbus",
-      "species_id": "Lutjanus gibbus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053539/fishial_ai/Lutjanus_gibbus.jpg",
-      "location": ""
-    },
-    "209": {
-      "name": "Lutjanus griseus",
-      "species_id": "Lutjanus griseus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053543/fishial_ai/Lutjanus_griseus.jpg",
-      "location": ""
-    },
-    "210": {
-      "name": "Lutjanus jocu",
-      "species_id": "Lutjanus jocu",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053549/fishial_ai/Lutjanus_jocu.jpg",
-      "location": ""
-    },
-    "211": {
-      "name": "Lutjanus kasmira",
-      "species_id": "Lutjanus kasmira",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053553/fishial_ai/Lutjanus_kasmira.jpg",
-      "location": ""
-    },
-    "212": {
-      "name": "Lutjanus mahogoni",
-      "species_id": "Lutjanus mahogoni",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053558/fishial_ai/Lutjanus_mahogoni.jpg",
-      "location": ""
-    },
-    "213": {
-      "name": "Lutjanus russellii",
-      "species_id": "Lutjanus russellii",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053563/fishial_ai/Lutjanus_russellii.jpg",
-      "location": ""
-    },
-    "214": {
-      "name": "Lutjanus sebae",
-      "species_id": "Lutjanus sebae",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053568/fishial_ai/Lutjanus_sebae.jpg",
-      "location": ""
-    },
-    "215": {
-      "name": "Lane Snapper",
-      "species_id": "Lutjanus synagris",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053573/fishial_ai/Lutjanus_synagris.jpg",
-      "location": ""
-    },
-    "216": {
-      "name": "Silk Snapper",
-      "species_id": "Lutjanus vivanus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053578/fishial_ai/Lutjanus_vivanus.jpg",
-      "location": ""
-    },
-    "217": {
-      "name": "Striped Shiner",
-      "species_id": "Luxilus chrysocephalus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053582/fishial_ai/Luxilus_chrysocephalus.jpg",
-      "location": ""
-    },
-    "218": {
-      "name": "Common Shiner",
-      "species_id": "Luxilus cornutus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053587/fishial_ai/Luxilus_cornutus.jpg",
-      "location": ""
-    },
-    "219": {
-      "name": "Maccullochella peelii",
-      "species_id": "Maccullochella peelii",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053592/fishial_ai/Maccullochella_peelii.jpg",
-      "location": ""
-    },
-    "220": {
-      "name": "Macquaria ambigua",
-      "species_id": "Macquaria ambigua",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053596/fishial_ai/Macquaria_ambigua.jpg",
-      "location": ""
-    },
-    "221": {
-      "name": "Australian bass",
-      "species_id": "Macquaria novemaculeata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751263341/fish_images/dx4pbhgyytk2o1ovpjmi.webp",
-      "location": ""
-    },
-    "222": {
-      "name": "Blue marlin",
-      "species_id": "Makaira nigricans",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751263398/fish_images/vg6vzgcoy2iexga5lgqc.jpg",
-      "location": ""
-    },
-    "223": {
-      "name": "Mayaheros urophthalmus",
-      "species_id": "Mayaheros urophthalmus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053604/fishial_ai/Mayaheros_urophthalmus.jpg",
-      "location": ""
-    },
-    "224": {
-      "name": "Megalops atlanticus",
-      "species_id": "Megalops atlanticus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053608/fishial_ai/Megalops_atlanticus.jpg",
-      "location": ""
-    },
-    "225": {
-      "name": "Megalops cyprinoides",
-      "species_id": "Megalops cyprinoides",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053613/fishial_ai/Megalops_cyprinoides.jpg",
-      "location": ""
-    },
-    "226": {
-      "name": "Menidia menidia",
-      "species_id": "Menidia menidia",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053618/fishial_ai/Menidia_menidia.jpg",
-      "location": ""
-    },
-    "227": {
-      "name": "Menticirrhus americanus",
-      "species_id": "Menticirrhus americanus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053623/fishial_ai/Menticirrhus_americanus.jpg",
-      "location": ""
-    },
-    "228": {
-      "name": "Menticirrhus saxatilis",
-      "species_id": "Menticirrhus saxatilis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053628/fishial_ai/Menticirrhus_saxatilis.jpg",
-      "location": ""
-    },
-    "229": {
-      "name": "Merlangius merlangus",
-      "species_id": "Merlangius merlangus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053633/fishial_ai/Merlangius_merlangus.jpg",
-      "location": ""
-    },
-    "230": {
-      "name": "Micropogonias undulatus",
-      "species_id": "Micropogonias undulatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053638/fishial_ai/Micropogonias_undulatus.jpg",
-      "location": ""
-    },
-    "231": {
-      "name": "Micropterus coosae",
-      "species_id": "Micropterus coosae",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053643/fishial_ai/Micropterus_coosae.jpg",
-      "location": ""
-    },
-    "232": {
-      "name": "Smallmouth Bass",
-      "species_id": "Micropterus dolomieu",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053648/fishial_ai/Smallmouth_Bass.jpg",
-      "location": "California"
-    },
-    "233": {
-      "name": "Micropterus floridanus",
-      "species_id": "Micropterus floridanus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053652/fishial_ai/Micropterus_floridanus.jpg",
-      "location": ""
-    },
-    "234": {
-      "name": "Micropterus henshalli",
-      "species_id": "Micropterus henshalli",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053657/fishial_ai/Micropterus_henshalli.jpg",
-      "location": ""
-    },
-    "235": {
-      "name": "Micropterus nigricans",
-      "species_id": "Micropterus nigricans",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053663/fishial_ai/Micropterus_nigricans.jpg",
-      "location": ""
-    },
-    "236": {
-      "name": "Micropterus notius",
-      "species_id": "Micropterus notius",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053667/fishial_ai/Micropterus_notius.jpg",
-      "location": ""
-    },
-    "237": {
-      "name": "Spotted Bass",
-      "species_id": "Micropterus punctulatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053672/fishial_ai/Spotted_Bass.jpg",
-      "location": "California"
-    },
-    "238": {
-      "name": "Micropterus treculii",
-      "species_id": "Micropterus treculii",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053677/fishial_ai/Micropterus_treculii.jpg",
-      "location": ""
-    },
-    "239": {
-      "name": "Morone americana",
-      "species_id": "Morone americana",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053682/fishial_ai/Morone_americana.jpg",
-      "location": ""
-    },
-    "240": {
-      "name": "Morone chrysops",
-      "species_id": "Morone chrysops",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053687/fishial_ai/Morone_chrysops.jpg",
-      "location": ""
-    },
-    "241": {
-      "name": "Morone chrysops X Morone saxatilis",
-      "species_id": "Morone chrysops X Morone saxatilis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053692/fishial_ai/Morone_chrysops_X_Morone_saxatilis.jpg",
-      "location": ""
-    },
-    "242": {
-      "name": "Morone mississippiensis",
-      "species_id": "Morone mississippiensis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053698/fishial_ai/Morone_mississippiensis.jpg",
-      "location": ""
-    },
-    "243": {
-      "name": "Atlantic Striped Bass",
-      "species_id": "Morone saxatilis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053703/fishial_ai/Atlantic_Striped_Bass.jpg",
-      "location": ""
-    },
-    "244": {
-      "name": "Moxostoma anisurum",
-      "species_id": "Moxostoma anisurum",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053708/fishial_ai/Moxostoma_anisurum.jpg",
-      "location": ""
-    },
-    "245": {
-      "name": "Moxostoma carinatum",
-      "species_id": "Moxostoma carinatum",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053712/fishial_ai/Moxostoma_carinatum.jpg",
-      "location": ""
-    },
-    "246": {
-      "name": "Moxostoma erythrurum",
-      "species_id": "Moxostoma erythrurum",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053717/fishial_ai/Moxostoma_erythrurum.jpg",
-      "location": ""
-    },
-    "247": {
-      "name": "Moxostoma macrolepidotum",
-      "species_id": "Moxostoma macrolepidotum",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053722/fishial_ai/Moxostoma_macrolepidotum.jpg",
-      "location": ""
-    },
-    "248": {
-      "name": "Moxostoma valenciennesi",
-      "species_id": "Moxostoma valenciennesi",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053727/fishial_ai/Moxostoma_valenciennesi.jpg",
-      "location": ""
-    },
-    "249": {
-      "name": "Mugil cephalus",
-      "species_id": "Mugil cephalus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053732/fishial_ai/Mugil_cephalus.jpg",
-      "location": ""
-    },
-    "250": {
-      "name": "Mugil curema",
-      "species_id": "Mugil curema",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053736/fishial_ai/Mugil_curema.jpg",
-      "location": ""
-    },
-    "251": {
-      "name": "Mustelus canis",
-      "species_id": "Mustelus canis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053741/fishial_ai/Mustelus_canis.jpg",
-      "location": ""
-    },
-    "252": {
-      "name": "Mustelus mustelus",
-      "species_id": "Mustelus mustelus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053747/fishial_ai/Mustelus_mustelus.jpg",
-      "location": ""
-    },
-    "253": {
-      "name": "Black Grouper",
-      "species_id": "Mycteroperca bonaci",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053752/fishial_ai/Black_Grouper.jpg",
-      "location": ""
-    },
-    "254": {
-      "name": "Gag Grouper",
-      "species_id": "Mycteroperca microlepis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053756/fishial_ai/Gag_Grouper.jpg",
-      "location": ""
-    },
-    "255": {
-      "name": "Mycteroperca venenosa",
-      "species_id": "Mycteroperca venenosa",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053762/fishial_ai/Mycteroperca_venenosa.jpg",
-      "location": ""
-    },
-    "256": {
-      "name": "Myliobatis aquila",
-      "species_id": "Myliobatis aquila",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053767/fishial_ai/Myliobatis_aquila.jpg",
-      "location": ""
-    },
-    "257": {
-      "name": "Myliobatis californica",
-      "species_id": "Myliobatis californica",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053773/fishial_ai/Myliobatis_californica.jpg",
-      "location": ""
-    },
-    "258": {
-      "name": "Tawny Nurse Shark",
-      "species_id": "Nebrius ferrugineus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751263473/fish_images/vydv2nk5iytmxnda8tyy.webp",
-      "location": ""
-    },
-    "259": {
-      "name": "lemon shark",
-      "species_id": "Negaprion brevirostris",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751263508/fish_images/abvwdlygfd3dnbxlrb7i.webp",
-      "location": ""
-    },
-    "260": {
-      "name": "Nematistius pectoralis",
-      "species_id": "Nematistius pectoralis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053835/fishial_ai/Nematistius_pectoralis.jpg",
-      "location": ""
-    },
-    "261": {
-      "name": "Neogobius melanostomus",
-      "species_id": "Neogobius melanostomus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053849/fishial_ai/Neogobius_melanostomus.jpg",
-      "location": ""
-    },
-    "262": {
-      "name": "Nocomis micropogon",
-      "species_id": "Nocomis micropogon",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053864/fishial_ai/Nocomis_micropogon.jpg",
-      "location": ""
-    },
-    "263": {
-      "name": "Notemigonus crysoleucas",
-      "species_id": "Notemigonus crysoleucas",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053869/fishial_ai/Notemigonus_crysoleucas.jpg",
-      "location": ""
-    },
-    "264": {
-      "name": "Notolabrus tetricus",
-      "species_id": "Notolabrus tetricus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053875/fishial_ai/Notolabrus_tetricus.jpg",
-      "location": ""
-    },
-    "265": {
-      "name": "Notropis atherinoides",
-      "species_id": "Notropis atherinoides",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053879/fishial_ai/Notropis_atherinoides.jpg",
-      "location": ""
-    },
-    "266": {
-      "name": "Notropis hudsonius",
-      "species_id": "Notropis hudsonius",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053884/fishial_ai/Notropis_hudsonius.jpg",
-      "location": ""
-    },
-    "267": {
-      "name": "Noturus flavus",
-      "species_id": "Noturus flavus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053889/fishial_ai/Noturus_flavus.jpg",
-      "location": ""
-    },
-    "268": {
-      "name": "Ocyurus chrysurus",
-      "species_id": "Ocyurus chrysurus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053894/fishial_ai/Ocyurus_chrysurus.jpg",
-      "location": ""
-    },
-    "269": {
-      "name": "Oligoplites saurus",
-      "species_id": "Oligoplites saurus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053899/fishial_ai/Oligoplites_saurus.jpg",
-      "location": ""
-    },
-    "270": {
-      "name": "Oncorhynchus clarkii",
-      "species_id": "Oncorhynchus clarkii",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053903/fishial_ai/Oncorhynchus_clarkii.jpg",
-      "location": ""
-    },
-    "271": {
-      "name": "Oncorhynchus clarkii clarkii",
-      "species_id": "Oncorhynchus clarkii clarkii",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053908/fishial_ai/Oncorhynchus_clarkii_clarkii.jpg",
-      "location": ""
-    },
-    "272": {
-      "name": "Pink Salmon",
-      "species_id": "Oncorhynchus gorbuscha",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053913/fishial_ai/Pink_Salmon.jpg",
-      "location": ""
-    },
-    "273": {
-      "name": "Chum salmon",
-      "species_id": "Oncorhynchus keta",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751263571/fish_images/b1ytlrpizwiuxzngbxqy.jpg",
-      "location": ""
-    },
-    "274": {
-      "name": "Coho salmon",
-      "species_id": "Oncorhynchus kisutch",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751263612/fish_images/nl1pa2mt0v1brf7dphir.jpg",
-      "location": ""
-    },
-    "275": {
-      "name": "Rainbow Trout",
-      "species_id": "Oncorhynchus mykiss",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053920/fishial_ai/Rainbow_Trout.jpg",
-      "location": "California"
-    },
-    "276": {
-      "name": "Sockeye salmon",
-      "species_id": "Oncorhynchus nerka",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751263672/fish_images/efoqeoynmsqcodgxung9.jpg",
-      "location": ""
-    },
-    "277": {
-      "name": "Chinook salmon",
-      "species_id": "Oncorhynchus tshawytscha",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751263761/fish_images/xh3vd96t59gwtwvgmrjd.jpg",
-      "location": ""
-    },
-    "278": {
-      "name": "Lingcod",
-      "species_id": "Ophiodon elongatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053929/fishial_ai/Lingcod.jpg",
-      "location": "California"
-    },
-    "279": {
-      "name": "Opisthonema oglinum",
-      "species_id": "Opisthonema oglinum",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053933/fishial_ai/Opisthonema_oglinum.jpg",
-      "location": ""
-    },
-    "280": {
-      "name": "Opsanus tau",
-      "species_id": "Opsanus tau",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053938/fishial_ai/Opsanus_tau.jpg",
-      "location": ""
-    },
-    "281": {
-      "name": "Oreochromis aureus",
-      "species_id": "Oreochromis aureus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053943/fishial_ai/Oreochromis_aureus.jpg",
-      "location": ""
-    },
-    "282": {
-      "name": "Oreochromis niloticus",
-      "species_id": "Oreochromis niloticus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053948/fishial_ai/Oreochromis_niloticus.jpg",
-      "location": ""
-    },
-    "283": {
-      "name": "Orthopristis chrysoptera",
-      "species_id": "Orthopristis chrysoptera",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053953/fishial_ai/Orthopristis_chrysoptera.jpg",
-      "location": ""
-    },
-    "284": {
-      "name": "Pachymetopon blochii",
-      "species_id": "Pachymetopon blochii",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053957/fishial_ai/Pachymetopon_blochii.jpg",
-      "location": ""
-    },
-    "285": {
-      "name": "Pagrus auratus",
-      "species_id": "Pagrus auratus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053962/fishial_ai/Pagrus_auratus.jpg",
-      "location": ""
-    },
-    "286": {
-      "name": "Pagrus pagrus",
-      "species_id": "Pagrus pagrus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053967/fishial_ai/Pagrus_pagrus.jpg",
-      "location": ""
-    },
-    "287": {
-      "name": "Parachromis managuensis",
-      "species_id": "Parachromis managuensis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053972/fishial_ai/Parachromis_managuensis.jpg",
-      "location": ""
-    },
-    "288": {
-      "name": "Paralabrax clathratus",
-      "species_id": "Paralabrax clathratus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053977/fishial_ai/Paralabrax_clathratus.jpg",
-      "location": ""
-    },
-    "289": {
-      "name": "Paralabrax maculatofasciatus",
-      "species_id": "Paralabrax maculatofasciatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053982/fishial_ai/Paralabrax_maculatofasciatus.jpg",
-      "location": ""
-    },
-    "290": {
-      "name": "Paralabrax nebulifer",
-      "species_id": "Paralabrax nebulifer",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053987/fishial_ai/Paralabrax_nebulifer.jpg",
-      "location": ""
-    },
-    "291": {
-      "name": "Paralichthys albigutta",
-      "species_id": "Paralichthys albigutta",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053992/fishial_ai/Paralichthys_albigutta.jpg",
-      "location": ""
-    },
-    "292": {
-      "name": "California Halibut",
-      "species_id": "Paralichthys californicus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053997/fishial_ai/California_Halibut.jpg",
-      "location": "California"
-    },
-    "293": {
-      "name": "Summer Flounder",
-      "species_id": "Paralichthys dentatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054002/fishial_ai/Summer_Flounder.jpg",
-      "location": ""
-    },
-    "294": {
-      "name": "Paralichthys lethostigma",
-      "species_id": "Paralichthys lethostigma",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054006/fishial_ai/Paralichthys_lethostigma.jpg",
-      "location": ""
-    },
-    "295": {
-      "name": "Pelmatolapia mariae",
-      "species_id": "Pelmatolapia mariae",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054012/fishial_ai/Pelmatolapia_mariae.jpg",
-      "location": ""
-    },
-    "296": {
-      "name": "Perca flavescens",
-      "species_id": "Perca flavescens",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054017/fishial_ai/Perca_flavescens.jpg",
-      "location": ""
-    },
-    "297": {
-      "name": "Perca fluviatilis",
-      "species_id": "Perca fluviatilis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054022/fishial_ai/Perca_fluviatilis.jpg",
-      "location": ""
-    },
-    "298": {
-      "name": "Pimelodus maculatus",
-      "species_id": "Pimelodus maculatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054027/fishial_ai/Pimelodus_maculatus.jpg",
-      "location": ""
-    },
-    "299": {
-      "name": "Pimephales promelas",
-      "species_id": "Pimephales promelas",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054031/fishial_ai/Pimephales_promelas.jpg",
-      "location": ""
-    },
-    "300": {
-      "name": "Pimephales vigilax",
-      "species_id": "Pimephales vigilax",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054036/fishial_ai/Pimephales_vigilax.jpg",
-      "location": ""
-    },
-    "301": {
-      "name": "Platichthys flesus",
-      "species_id": "Platichthys flesus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054041/fishial_ai/Platichthys_flesus.jpg",
-      "location": ""
-    },
-    "302": {
-      "name": "Platichthys stellatus",
-      "species_id": "Platichthys stellatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054057/fishial_ai/Platichthys_stellatus.jpg",
-      "location": ""
-    },
-    "303": {
-      "name": "Platycephalus fuscus",
-      "species_id": "Platycephalus fuscus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054082/fishial_ai/Platycephalus_fuscus.jpg",
-      "location": ""
-    },
-    "304": {
-      "name": "Platycephalus indicus",
-      "species_id": "Platycephalus indicus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054150/fishial_ai/Platycephalus_indicus.jpg",
-      "location": ""
-    },
-    "305": {
-      "name": "Platyrhinoidis triseriata",
-      "species_id": "Platyrhinoidis triseriata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054167/fishial_ai/Platyrhinoidis_triseriata.jpg",
-      "location": ""
-    },
-    "306": {
-      "name": "Plectropomus laevis",
-      "species_id": "Plectropomus laevis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054172/fishial_ai/Plectropomus_laevis.jpg",
-      "location": ""
-    },
-    "307": {
-      "name": "Plectropomus leopardus",
-      "species_id": "Plectropomus leopardus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054177/fishial_ai/Plectropomus_leopardus.jpg",
-      "location": ""
-    },
-    "308": {
-      "name": "Plectropomus maculatus",
-      "species_id": "Plectropomus maculatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054182/fishial_ai/Plectropomus_maculatus.jpg",
-      "location": ""
-    },
-    "309": {
-      "name": "Pleuronectes platessa",
-      "species_id": "Pleuronectes platessa",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054187/fishial_ai/Pleuronectes_platessa.jpg",
-      "location": ""
-    },
-    "310": {
-      "name": "Pogonias cromis",
-      "species_id": "Pogonias cromis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054192/fishial_ai/Pogonias_cromis.jpg",
-      "location": ""
-    },
-    "311": {
-      "name": "Pollachius pollachius",
-      "species_id": "Pollachius pollachius",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054197/fishial_ai/Pollachius_pollachius.jpg",
-      "location": ""
-    },
-    "312": {
-      "name": "Pomacanthus arcuatus",
-      "species_id": "Pomacanthus arcuatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054201/fishial_ai/Pomacanthus_arcuatus.jpg",
-      "location": ""
-    },
-    "313": {
-      "name": "Pomadasys kaakan",
-      "species_id": "Pomadasys kaakan",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054206/fishial_ai/Pomadasys_kaakan.jpg",
-      "location": ""
-    },
-    "314": {
-      "name": "Bluefish",
-      "species_id": "Pomatomus saltatrix",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054210/fishial_ai/Bluefish.jpg",
-      "location": ""
-    },
-    "315": {
-      "name": "Pomoxis annularis",
-      "species_id": "Pomoxis annularis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054215/fishial_ai/Pomoxis_annularis.jpg",
-      "location": ""
-    },
-    "316": {
-      "name": "Black Crappie",
-      "species_id": "Pomoxis nigromaculatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054220/fishial_ai/Black_Crappie.jpg",
-      "location": "California"
-    },
-    "317": {
-      "name": "Prionace glauca",
-      "species_id": "Prionace glauca",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054224/fishial_ai/Prionace_glauca.jpg",
-      "location": ""
-    },
-    "318": {
-      "name": "Prionotus evolans",
-      "species_id": "Prionotus evolans",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054229/fishial_ai/Prionotus_evolans.jpg",
-      "location": ""
-    },
-    "319": {
-      "name": "Prosopium williamsoni",
-      "species_id": "Prosopium williamsoni",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054233/fishial_ai/Prosopium_williamsoni.jpg",
-      "location": ""
-    },
-    "320": {
-      "name": "Pseudobatos productus",
-      "species_id": "Pseudobatos productus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054238/fishial_ai/Pseudobatos_productus.jpg",
-      "location": ""
-    },
-    "321": {
-      "name": "Winter Flounder",
-      "species_id": "Pseudopleuronectes americanus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054244/fishial_ai/Winter_Flounder.jpg",
-      "location": ""
-    },
-    "322": {
-      "name": "Pterois volitans",
-      "species_id": "Pterois volitans",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054248/fishial_ai/Pterois_volitans.jpg",
-      "location": ""
-    },
-    "323": {
-      "name": "Ptychocheilus oregonensis",
-      "species_id": "Ptychocheilus oregonensis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054253/fishial_ai/Ptychocheilus_oregonensis.jpg",
-      "location": ""
-    },
-    "324": {
-      "name": "Flathead catfish",
-      "species_id": "Pylodictis olivaris",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751263882/fish_images/ugf9kddrzrzpipzziers.jpg",
-      "location": ""
-    },
-    "325": {
-      "name": "Cobia",
-      "species_id": "Rachycentron canadum",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054268/fishial_ai/Cobia.jpg",
-      "location": ""
-    },
-    "326": {
-      "name": "Raja clavata",
-      "species_id": "Raja clavata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054273/fishial_ai/Raja_clavata.jpg",
-      "location": ""
-    },
-    "327": {
-      "name": "Rhabdosargus sarba",
-      "species_id": "Rhabdosargus sarba",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054277/fishial_ai/Rhabdosargus_sarba.jpg",
-      "location": ""
-    },
-    "328": {
-      "name": "Rhinichthys cataractae",
-      "species_id": "Rhinichthys cataractae",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054282/fishial_ai/Rhinichthys_cataractae.jpg",
-      "location": ""
-    },
-    "329": {
-      "name": "Rhinichthys cataractae",
-      "species_id": "Rhinichthys cataractae",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054282/fishial_ai/Rhinichthys_cataractae.jpg",
-      "location": ""
-    },
-    "330": {
-      "name": "Atlantic Sharpnose Shark",
-      "species_id": "Rhizoprionodon terraenovae",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054292/fishial_ai/Atlantic_Sharpnose_Shark.jpg",
-      "location": ""
-    },
-    "331": {
-      "name": "Vermilion Snapper",
-      "species_id": "Rhomboplites aurorubens",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054297/fishial_ai/Vermilion_Snapper.jpg",
-      "location": ""
-    },
-    "332": {
-      "name": "Rutilus rutilus",
-      "species_id": "Rutilus rutilus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054302/fishial_ai/Rutilus_rutilus.jpg",
-      "location": ""
-    },
-    "333": {
-      "name": "Salminus brasiliensis",
-      "species_id": "Salminus brasiliensis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054307/fishial_ai/Salminus_brasiliensis.jpg",
-      "location": ""
-    },
-    "334": {
-      "name": "Atlantic Salmon",
-      "species_id": "Salmo salar",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054312/fishial_ai/Atlantic_Salmon.jpg",
-      "location": ""
-    },
-    "335": {
-      "name": "Brown Trout",
-      "species_id": "Salmo trutta",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054317/fishial_ai/Brown_Trout.jpg",
-      "location": "California"
-    },
-    "336": {
-      "name": "Salmo trutta X Salvelinus fontinalis",
-      "species_id": "Salmo trutta X Salvelinus fontinalis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054322/fishial_ai/Salmo_trutta_X_Salvelinus_fontinalis.jpg",
-      "location": ""
-    },
-    "337": {
-      "name": "Salvelinus confluentus",
-      "species_id": "Salvelinus confluentus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054327/fishial_ai/Salvelinus_confluentus.jpg",
-      "location": ""
-    },
-    "338": {
-      "name": "Brook Trout",
-      "species_id": "Salvelinus fontinalis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054331/fishial_ai/Brook_Trout.jpg",
-      "location": "California"
-    },
-    "339": {
-      "name": "Salvelinus malma",
-      "species_id": "Salvelinus malma",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054336/fishial_ai/Salvelinus_malma.jpg",
-      "location": ""
-    },
-    "340": {
-      "name": "Salvelinus namaycush",
-      "species_id": "Salvelinus namaycush",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054341/fishial_ai/Salvelinus_namaycush.jpg",
-      "location": ""
-    },
-    "341": {
-      "name": "Sander canadensis",
-      "species_id": "Sander canadensis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054346/fishial_ai/Sander_canadensis.jpg",
-      "location": ""
-    },
-    "342": {
-      "name": "Sander lucioperca",
-      "species_id": "Sander lucioperca",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054351/fishial_ai/Sander_lucioperca.jpg",
-      "location": ""
-    },
-    "343": {
-      "name": "Sander vitreus",
-      "species_id": "Sander vitreus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054355/fishial_ai/Sander_vitreus.jpg",
-      "location": ""
-    },
-    "344": {
-      "name": "Sarda sarda",
-      "species_id": "Sarda sarda",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054360/fishial_ai/Sarda_sarda.jpg",
-      "location": ""
-    },
-    "345": {
-      "name": "Sarotherodon melanotheron",
-      "species_id": "Sarotherodon melanotheron",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054364/fishial_ai/Sarotherodon_melanotheron.jpg",
-      "location": ""
-    },
-    "346": {
-      "name": "Sarpa salpa",
-      "species_id": "Sarpa salpa",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054369/fishial_ai/Sarpa_salpa.jpg",
-      "location": ""
-    },
-    "347": {
-      "name": "Scaphirhynchus platorynchus",
-      "species_id": "Scaphirhynchus platorynchus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054374/fishial_ai/Scaphirhynchus_platorynchus.jpg",
-      "location": ""
-    },
-    "348": {
-      "name": "Scardinius erythrophthalmus",
-      "species_id": "Scardinius erythrophthalmus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054378/fishial_ai/Scardinius_erythrophthalmus.jpg",
-      "location": ""
-    },
-    "349": {
-      "name": "Scarus ghobban",
-      "species_id": "Scarus ghobban",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054383/fishial_ai/Scarus_ghobban.jpg",
-      "location": ""
-    },
-    "350": {
-      "name": "Scarus guacamaia",
-      "species_id": "Scarus guacamaia",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054388/fishial_ai/Scarus_guacamaia.jpg",
-      "location": ""
-    },
-    "351": {
-      "name": "Sciaenops ocellatus",
-      "species_id": "Sciaenops ocellatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054393/fishial_ai/Sciaenops_ocellatus.jpg",
-      "location": ""
-    },
-    "352": {
-      "name": "Pacific Mackerel",
-      "species_id": "Scomber japonicus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054397/fishial_ai/Pacific_Mackerel.jpg",
-      "location": ""
-    },
-    "353": {
-      "name": "Atlantic Mackerel",
-      "species_id": "Scomber scombrus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054402/fishial_ai/Atlantic_Mackerel.jpg",
-      "location": ""
-    },
-    "354": {
-      "name": "Scomberoides commersonnianus",
-      "species_id": "Scomberoides commersonnianus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054407/fishial_ai/Scomberoides_commersonnianus.jpg",
-      "location": ""
-    },
-    "355": {
-      "name": "Scomberoides lysan",
-      "species_id": "Scomberoides lysan",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054411/fishial_ai/Scomberoides_lysan.jpg",
-      "location": ""
-    },
-    "356": {
-      "name": "King Mackerel",
-      "species_id": "Scomberomorus cavalla",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054416/fishial_ai/King_Mackerel.jpg",
-      "location": ""
-    },
-    "357": {
-      "name": "Scomberomorus commerson",
-      "species_id": "Scomberomorus commerson",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054421/fishial_ai/Scomberomorus_commerson.jpg",
-      "location": ""
-    },
-    "358": {
-      "name": "Spanish Mackerel",
-      "species_id": "Scomberomorus maculatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054425/fishial_ai/Spanish_Mackerel.jpg",
-      "location": ""
-    },
-    "359": {
-      "name": "Scomberomorus regalis",
-      "species_id": "Scomberomorus regalis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054431/fishial_ai/Scomberomorus_regalis.jpg",
-      "location": ""
-    },
-    "360": {
-      "name": "Scomberomorus sierra",
-      "species_id": "Scomberomorus sierra",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054435/fishial_ai/Scomberomorus_sierra.jpg",
-      "location": ""
-    },
-    "361": {
-      "name": "California Scorpionfish (Sculpin)",
-      "species_id": "Scorpaena guttata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054442/fishial_ai/California_Scorpionfish_%28Sculpin%29.jpg",
-      "location": "California"
-    },
-    "362": {
-      "name": "Cabezon",
-      "species_id": "Scorpaenichthys marmoratus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054447/fishial_ai/Cabezon.jpg",
-      "location": "California"
-    },
-    "363": {
-      "name": "Scyliorhinus canicula",
-      "species_id": "Scyliorhinus canicula",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054452/fishial_ai/Scyliorhinus_canicula.jpg",
-      "location": ""
-    },
-    "364": {
-      "name": "Brown Rockfish",
-      "species_id": "Sebastes auriculatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054457/fishial_ai/Brown_Rockfish.jpg",
-      "location": "California"
-    },
-    "365": {
-      "name": "Black Rockfish",
-      "species_id": "Sebastes melanops",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054462/fishial_ai/Black_Rockfish.jpg",
-      "location": "California"
-    },
-    "366": {
-      "name": "Vermilion Rockfish",
-      "species_id": "Sebastes miniatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054467/fishial_ai/Vermilion_Rockfish.jpg",
-      "location": "California"
-    },
-    "367": {
-      "name": "Selar crumenophthalmus",
-      "species_id": "Selar crumenophthalmus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054471/fishial_ai/Selar_crumenophthalmus.jpg",
-      "location": ""
-    },
-    "368": {
-      "name": "Selene vomer",
-      "species_id": "Selene vomer",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054476/fishial_ai/Selene_vomer.jpg",
-      "location": ""
-    },
-    "369": {
-      "name": "Semotilus atromaculatus",
-      "species_id": "Semotilus atromaculatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054482/fishial_ai/Semotilus_atromaculatus.jpg",
-      "location": ""
-    },
-    "370": {
-      "name": "Semotilus corporalis",
-      "species_id": "Semotilus corporalis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054486/fishial_ai/Semotilus_corporalis.jpg",
-      "location": ""
-    },
-    "371": {
-      "name": "Greater Amberjack",
-      "species_id": "Seriola dumerili",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054492/fishial_ai/Greater_Amberjack.jpg",
-      "location": ""
-    },
-    "372": {
-      "name": "Yellowtail",
-      "species_id": "Seriola lalandi",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054503/fishial_ai/Yellowtail.jpg",
-      "location": "California"
-    },
-    "373": {
-      "name": "Almaco Jack",
-      "species_id": "Seriola rivoliana",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054508/fishial_ai/Almaco_Jack.jpg",
-      "location": ""
-    },
-    "374": {
-      "name": "Sillaginodes punctatus",
-      "species_id": "Sillaginodes punctatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054516/fishial_ai/Sillaginodes_punctatus.jpg",
-      "location": ""
-    },
-    "375": {
-      "name": "Sillago ciliata",
-      "species_id": "Sillago ciliata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054521/fishial_ai/Sillago_ciliata.jpg",
-      "location": ""
-    },
-    "376": {
-      "name": "Silurus glanis",
-      "species_id": "Silurus glanis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054526/fishial_ai/Silurus_glanis.jpg",
-      "location": ""
-    },
-    "377": {
-      "name": "Sparisoma aurofrenatum",
-      "species_id": "Sparisoma aurofrenatum",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054531/fishial_ai/Sparisoma_aurofrenatum.jpg",
-      "location": ""
-    },
-    "378": {
-      "name": "Sparisoma chrysopterum",
-      "species_id": "Sparisoma chrysopterum",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054535/fishial_ai/Sparisoma_chrysopterum.jpg",
-      "location": ""
-    },
-    "379": {
-      "name": "Sparisoma cretense",
-      "species_id": "Sparisoma cretense",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054541/fishial_ai/Sparisoma_cretense.jpg",
-      "location": ""
-    },
-    "380": {
-      "name": "Sparisoma rubripinne",
-      "species_id": "Sparisoma rubripinne",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054545/fishial_ai/Sparisoma_rubripinne.jpg",
-      "location": ""
-    },
-    "381": {
-      "name": "Sparisoma viride",
-      "species_id": "Sparisoma viride",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054550/fishial_ai/Sparisoma_viride.jpg",
-      "location": ""
-    },
-    "382": {
-      "name": "Sparus aurata",
-      "species_id": "Sparus aurata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054555/fishial_ai/Sparus_aurata.jpg",
-      "location": ""
-    },
-    "383": {
-      "name": "Sphoeroides maculatus",
-      "species_id": "Sphoeroides maculatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054560/fishial_ai/Sphoeroides_maculatus.jpg",
-      "location": ""
-    },
-    "384": {
-      "name": "Sphyraena argentea",
-      "species_id": "Sphyraena argentea",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054565/fishial_ai/Sphyraena_argentea.jpg",
-      "location": ""
-    },
-    "385": {
-      "name": "Sphyraena barracuda",
-      "species_id": "Sphyraena barracuda",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054571/fishial_ai/Sphyraena_barracuda.jpg",
-      "location": ""
-    },
-    "386": {
-      "name": "Sphyraena jello",
-      "species_id": "Sphyraena jello",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054576/fishial_ai/Sphyraena_jello.jpg",
-      "location": ""
-    },
-    "387": {
-      "name": "Sphyraena novaehollandiae",
-      "species_id": "Sphyraena novaehollandiae",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054580/fishial_ai/Sphyraena_novaehollandiae.jpg",
-      "location": ""
-    },
-    "388": {
-      "name": "Sphyraena obtusata",
-      "species_id": "Sphyraena obtusata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054586/fishial_ai/Sphyraena_obtusata.jpg",
-      "location": ""
-    },
-    "389": {
-      "name": "Scalloped Hammerhead Shark",
-      "species_id": "Sphyrna lewini",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054591/fishial_ai/Scalloped_Hammerhead_Shark.jpg",
-      "location": ""
-    },
-    "390": {
-      "name": "Sphyrna mokarran",
-      "species_id": "Sphyrna mokarran",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054595/fishial_ai/Sphyrna_mokarran.jpg",
-      "location": ""
-    },
-    "391": {
-      "name": "Bonnethead Shark",
-      "species_id": "Sphyrna tiburo",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054600/fishial_ai/Bonnethead_Shark.jpg",
-      "location": ""
-    },
-    "392": {
-      "name": "Sphyrna zygaena",
-      "species_id": "Sphyrna zygaena",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054606/fishial_ai/Sphyrna_zygaena.jpg",
-      "location": ""
-    },
-    "393": {
-      "name": "Spondyliosoma cantharus",
-      "species_id": "Spondyliosoma cantharus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054611/fishial_ai/Spondyliosoma_cantharus.jpg",
-      "location": ""
-    },
-    "394": {
-      "name": "Atlantic Spiny Dogfish",
-      "species_id": "Squalus acanthias",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054616/fishial_ai/Atlantic_Spiny_Dogfish.jpg",
-      "location": ""
-    },
-    "395": {
-      "name": "Scup",
-      "species_id": "Stenotomus chrysops",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054621/fishial_ai/Scup.jpg",
-      "location": ""
-    },
-    "396": {
-      "name": "Strongylura marina",
-      "species_id": "Strongylura marina",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054626/fishial_ai/Strongylura_marina.jpg",
-      "location": ""
-    },
-    "397": {
-      "name": "Symphodus melops",
-      "species_id": "Symphodus melops",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054631/fishial_ai/Symphodus_melops.jpg",
-      "location": ""
-    },
-    "398": {
-      "name": "Synodus foetens",
-      "species_id": "Synodus foetens",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054635/fishial_ai/Synodus_foetens.jpg",
-      "location": ""
-    },
-    "399": {
-      "name": "Taeniura lymma",
-      "species_id": "Taeniura lymma",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054640/fishial_ai/Taeniura_lymma.jpg",
-      "location": ""
-    },
-    "400": {
-      "name": "Tandanus tandanus",
-      "species_id": "Tandanus tandanus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054645/fishial_ai/Tandanus_tandanus.jpg",
-      "location": ""
-    },
-    "401": {
-      "name": "Tautoga onitis",
-      "species_id": "Tautoga onitis",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054650/fishial_ai/Tautoga_onitis.jpg",
-      "location": ""
-    },
-    "402": {
-      "name": "Tautogolabrus adspersus",
-      "species_id": "Tautogolabrus adspersus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054656/fishial_ai/Tautogolabrus_adspersus.jpg",
-      "location": ""
-    },
-    "403": {
-      "name": "Thalassoma purpureum",
-      "species_id": "Thalassoma purpureum",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054663/fishial_ai/Thalassoma_purpureum.jpg",
-      "location": ""
-    },
-    "404": {
-      "name": "Pacific Albacore Tuna",
-      "species_id": "Thunnus alalunga",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054668/fishial_ai/Pacific_Albacore_Tuna.jpg",
-      "location": ""
-    },
-    "405": {
-      "name": "Pacific Yellowfin Tuna",
-      "species_id": "Thunnus albacares",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054672/fishial_ai/Pacific_Yellowfin_Tuna.jpg",
-      "location": ""
-    },
-    "406": {
-      "name": "Thunnus atlanticus",
-      "species_id": "Thunnus atlanticus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054677/fishial_ai/Thunnus_atlanticus.jpg",
-      "location": ""
-    },
-    "407": {
-      "name": "Atlantic bluefin tuna",
-      "species_id": "Thunnus thynnus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751263932/fish_images/zqpl4rfuz8laep7xkegq.webp",
-      "location": ""
-    },
-    "408": {
-      "name": "Thymallus arcticus",
-      "species_id": "Thymallus arcticus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054683/fishial_ai/Thymallus_arcticus.jpg",
-      "location": ""
-    },
-    "409": {
-      "name": "Thymallus thymallus",
-      "species_id": "Thymallus thymallus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054688/fishial_ai/Thymallus_thymallus.jpg",
-      "location": ""
-    },
-    "410": {
-      "name": "Thyrsites atun",
-      "species_id": "Thyrsites atun",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054693/fishial_ai/Thyrsites_atun.jpg",
-      "location": ""
-    },
-    "411": {
-      "name": "Tilapia sparrmanii",
-      "species_id": "Tilapia sparrmanii",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054698/fishial_ai/Tilapia_sparrmanii.jpg",
-      "location": ""
-    },
-    "412": {
-      "name": "Tinca tinca",
-      "species_id": "Tinca tinca",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054702/fishial_ai/Tinca_tinca.jpg",
-      "location": ""
-    },
-    "413": {
-      "name": "Trachinotus baillonii",
-      "species_id": "Trachinotus baillonii",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054707/fishial_ai/Trachinotus_baillonii.jpg",
-      "location": ""
-    },
-    "414": {
-      "name": "Trachinotus blochii",
-      "species_id": "Trachinotus blochii",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054713/fishial_ai/Trachinotus_blochii.jpg",
-      "location": ""
-    },
-    "415": {
-      "name": "Trachinotus carolinus",
-      "species_id": "Trachinotus carolinus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054718/fishial_ai/Trachinotus_carolinus.jpg",
-      "location": ""
-    },
-    "416": {
-      "name": "Trachinotus falcatus",
-      "species_id": "Trachinotus falcatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054724/fishial_ai/Trachinotus_falcatus.jpg",
-      "location": ""
-    },
-    "417": {
-      "name": "Trachinotus goodei",
-      "species_id": "Trachinotus goodei",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054729/fishial_ai/Trachinotus_goodei.jpg",
-      "location": ""
-    },
-    "418": {
-      "name": "Trachinotus ovatus",
-      "species_id": "Trachinotus ovatus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054734/fishial_ai/Trachinotus_ovatus.jpg",
-      "location": ""
-    },
-    "419": {
-      "name": "Trachurus novaezelandiae",
-      "species_id": "Trachurus novaezelandiae",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054738/fishial_ai/Trachurus_novaezelandiae.jpg",
-      "location": ""
-    },
-    "420": {
-      "name": "Trachurus symmetricus",
-      "species_id": "Trachurus symmetricus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054743/fishial_ai/Trachurus_symmetricus.jpg",
-      "location": ""
-    },
-    "421": {
-      "name": "Triaenodon obesus",
-      "species_id": "Triaenodon obesus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054747/fishial_ai/Triaenodon_obesus.jpg",
-      "location": ""
-    },
-    "422": {
-      "name": "Leopard Shark",
-      "species_id": "Triakis semifasciata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054752/fishial_ai/Leopard_Shark.jpg",
-      "location": "California"
-    },
-    "423": {
-      "name": "Trygonorrhina fasciata",
-      "species_id": "Trygonorrhina fasciata",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054758/fishial_ai/Trygonorrhina_fasciata.jpg",
-      "location": ""
-    },
-    "424": {
-      "name": "Tylosurus crocodilus",
-      "species_id": "Tylosurus crocodilus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054763/fishial_ai/Tylosurus_crocodilus.jpg",
-      "location": ""
-    },
-    "425": {
-      "name": "Variola louti",
-      "species_id": "Variola louti",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054768/fishial_ai/Variola_louti.jpg",
-      "location": ""
-    },
-    "426": {
-      "name": "North Pacific Swordfish",
-      "species_id": "Xiphias gladius",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751161920/fish_images/ylyvy3tek63tmwanygoj.webp",
-      "location": ""
-    },
-    "427": {
-      "name": "Sacramento Perch",
-      "species_id": "Archoplites interruptus",
-      "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185611/fish_images/kybxyzooy5jecw5lzlku.jpg",
-      "location": "California"
-    }
+      "0": {
+          "name": "Bay Scallop",
+          "species_id": "Argopecten ventricosus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751184770/fish_images/ytzr4irgii6i9qpvoanp.jpg",
+          "location": "California"
+      },
+      "1": {
+          "name": "Black Crappie",
+          "species_id": "Pomoxis nigromaculatus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054220/fishial_ai/Black_Crappie.jpg",
+          "location": "California"
+      },
+      "2": {
+          "name": "Black Rockfish",
+          "species_id": "Sebastes melanops",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054462/fishial_ai/Black_Rockfish.jpg",
+          "location": "California"
+      },
+      "3": {
+          "name": "Blue Rockfish",
+          "species_id": "Sebastes mystinus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751184862/fish_images/g97va80rqrqhpt4ayudv.jpg",
+          "location": "California"
+      },
+      "4": {
+          "name": "Bluegill",
+          "species_id": "Lepomis macrochirus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053421/fishial_ai/Bluegill.jpg",
+          "location": "California"
+      },
+      "5": {
+          "name": "Brook Trout",
+          "species_id": "Salvelinus fontinalis",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054331/fishial_ai/Brook_Trout.jpg",
+          "location": "California"
+      },
+      "6": {
+          "name": "Brown Rockfish",
+          "species_id": "Sebastes auriculatus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054457/fishial_ai/Brown_Rockfish.jpg",
+          "location": "California"
+      },
+      "7": {
+          "name": "Brown Trout",
+          "species_id": "Salmo trutta",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054317/fishial_ai/Brown_Trout.jpg",
+          "location": "California"
+      },
+      "8": {
+          "name": "Cabezon",
+          "species_id": "Scorpaenichthys marmoratus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054447/fishial_ai/Cabezon.jpg",
+          "location": "California"
+      },
+      "9": {
+          "name": "California Halibut",
+          "species_id": "Paralichthys californicus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053997/fishial_ai/California_Halibut.jpg",
+          "location": "California"
+      },
+      "10": {
+          "name": "California Scorpionfish",
+          "species_id": "Scorpaena guttata",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054442/fishial_ai/California_Scorpionfish_%28Sculpin%29.jpg",
+          "location": "California"
+      },
+      "11": {
+          "name": "Canary Rockfish",
+          "species_id": "Sebastes pinniger",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751184906/fish_images/otsfguaviyfedythyqrx.jpg",
+          "location": "California"
+      },
+      "12": {
+          "name": "Channel Catfish",
+          "species_id": "Ictalurus punctatus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053309/fishial_ai/Channel_Catfish.jpg",
+          "location": "California"
+      },
+      "13": {
+            "name": "Common Carp",
+          "species_id": "Cyprinus carpio",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053016/fishial_ai/Common_Carp.jpg",
+          "location": "California"
+      },
+      "14": {
+          "name": "Copper Rockfish",
+          "species_id": "Sebastes caurinus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751184906/fish_images/otsfguaviyfedythyqrx.jpg",
+          "location": "California"
+      },
+      "15": {
+          "name": "Curlfin Sole",
+          "species_id": "Pleuronichthys decurrens",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751184968/fish_images/nxodxh4o9urzdmzd06to.jpg",
+          "location": "California"
+      },
+      "16": {
+          "name": "Darkblotched Rockfish",
+          "species_id": "Sebastes crameri",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751184990/fish_images/wburlfusn75zkukskjcc.jpg",
+          "location": "California"
+      },
+      "17": {
+          "name": "Deacon Rockfish",
+          "species_id": "Sebastes diaconus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751317652/fish_images/m0e2rgws6bzfht3yj2tj.jpg",
+          "location": "California"
+      },
+      "18": {
+          "name": "Dungeness Crab",
+          "species_id": "Metacarcinus magister",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185015/fish_images/rz6rj9wc6fz45qgfaxod.jpg",
+          "location": "California"
+      },
+      "19": {
+          "name": "Freshwater Crayfish",
+          "species_id": "Orconectes spp.",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185078/fish_images/s4fd0cp0gbbvl1v1ig47.jpg",
+          "location": "California"
+      },
+      "20": {
+          "name": "Golden Trout",
+          "species_id": "Oncorhynchus aguabonita",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185099/fish_images/h1yq1yx7jkveioavv6yu.jpg",
+          "location": "California"
+      },
+      "21": {
+          "name": "Graceful Rock Crab",
+          "species_id": "Metacarcinus gracilis",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751341543/fish_images/w7p1cyyfme8mojxnlspa.webp",
+          "location": "California"
+      },
+      "22": {
+          "name": "Green Abalone",
+          "species_id": "Haliotis fulgens",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185119/fish_images/fyrxdguxlhgux4lbrbfh.jpg",
+          "location": "California"
+      },
+      "23": {
+          "name": "Kelp Greenling",
+          "species_id": "Hexagrammos decagrammus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185168/fish_images/pod8o48uujrajqarfdu7.jpg",
+          "location": "California"
+      },
+      "24": {
+          "name": "Largemouth Bass",
+          "species_id": "Micropterus salmoides",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185200/fish_images/upvq50me1125nvwwfnut.jpg",
+          "location": "California"
+      },
+      "25": {
+          "name": "Leopard Shark",
+          "species_id": "Triakis semifasciata",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054752/fishial_ai/Leopard_Shark.jpg",
+          "location": "California"
+      },   
+      "26": {
+          "name": "Lingcod",
+          "species_id": "Ophiodon elongatus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053929/fishial_ai/Lingcod.jpg",
+          "location": "California"
+      },   
+      "27": {
+          "name": "Market Squid",
+          "species_id": "Doryteuthis opalescens",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185222/fish_images/tsme7vvqprgda8qda4si.jpg",
+          "location": "California"
+      },
+      "28": {
+          "name": "Ocean Whitefish",
+          "species_id": "Caulolatilus princeps",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751186728/fish_images/thcc5rgvl3tfr4zumu1y.jpg",
+          "location": "California"
+      },
+      "29": {
+          "name": "Olive Rockfish",
+          "species_id": "Sebastes serranoides",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185243/fish_images/kocjgufwy6vwsrytmsef.jpg",
+          "location": "California"
+      },
+      "30": {
+          "name": "Pacific Razor Clam",
+          "species_id": "Siliqua patula",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185288/fish_images/ytq3ywlr4okpuemv92n0.jpg",
+          "location": "California"
+      },
+      "31": {
+          "name": "Pacific Sanddab",
+          "species_id": "Citharichthys sordidus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185308/fish_images/gjb3vzysekre0hbbxshy.jpg",
+          "location": "California"
+      },
+      "32": {
+          "name": "Pink Abalone",
+          "species_id": "Haliotis corrugata",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185330/fish_images/huytxr0rorywgb0tkgpi.jpg",
+          "location": "California"
+      },
+      "33": {
+          "name": "Pumpkinseed",
+          "species_id": "Lepomis gibbosus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053407/fishial_ai/Pumpkinseed.jpg",
+          "location": "California"
+      },
+      "34": {
+          "name": "Purple Sea Urchin",
+          "species_id": "Strongylocentrotus purpuratus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185360/fish_images/kdafsf3g1pjgbbxv2wm2.jpg",
+          "location": "California"
+      },
+      "35": {
+          "name": "Quillback Rockfish",
+          "species_id": "Sebastes maliger",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185380/fish_images/tk3bzaqme4tul1xydzry.jpg",
+          "location": "California"
+      },
+      "36": {
+          "name": "Rainbow Trout",
+          "species_id": "Oncorhynchus mykiss",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053920/fishial_ai/Rainbow_Trout.jpg",
+          "location": "California"
+      },
+      "37": {
+          "name": "Red Abalone",
+          "species_id": "Haliotis rufescens",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185406/fish_images/vl87hac1qmg21uux8tau.jpg",
+          "location": "California"
+      },
+      "38": {
+          "name": "Red Rock Crab",
+          "species_id": "Cancer productus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185441/fish_images/sz3p9o0ktfmpvpaln7pi.jpg",
+          "location": "California"
+      },
+      "39": {
+          "name": "Red Sea Urchin",
+          "species_id": "Mesocentrotus franciscanus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185520/fish_images/btkfjr5i2oee5dq21sio.jpg",
+          "location": "California"
+      },
+      "40": {
+          "name": "Rock Greenling",
+          "species_id": "Hexagrammos lagocephalus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185548/fish_images/yuslqovukhommxrmiimz.jpg",
+          "location": "California"
+      },
+      "41": {
+          "name": "Rock Sole",
+          "species_id": "Lepidopsetta bilineata",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185568/fish_images/vj2sjpb6pt7t8chdipys.jpg",
+          "location": "California"
+      },
+      "42": {
+          "name": "Rougheye Rockfish",
+          "species_id": "Sebastes aleutianus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185587/fish_images/svaqtjqz0aa2dzff66bk.jpg",
+          "location": "California"
+      },
+      "43": {
+          "name": "Sacramento Perch",
+          "species_id": "Archoplites interruptus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185611/fish_images/kybxyzooy5jecw5lzlku.jpg",
+          "location": "California"
+      },
+      "44": {
+          "name": "Sand Sole",
+          "species_id": "Lepidopsetta polyxystra",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185630/fish_images/n6vzitoe8wonxchmlhl0.jpg",
+          "location": "California"
+      },
+      "45": {
+          "name": "Sea Cucumber",
+          "species_id": "Holothuroidea (various)",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185660/fish_images/vxfpowkilldiy1i8hrqs.jpg",
+          "location": "California"
+      },
+      "46": {
+          "name": "Shore Crab",
+          "species_id": "Hemigrapsus nudus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185679/fish_images/gbvccd2uayrctfsnr9hn.jpg",
+          "location": "California"
+      },      
+      "47": {
+          "name": "Smallmouth Bass",
+          "species_id": "Micropterus dolomieu",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053648/fishial_ai/Smallmouth_Bass.jpg",
+          "location": "California"
+      },
+      "48": {
+          "name": "Spider Crab",
+          "species_id": "Libinia emarginata",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185697/fish_images/rfymuiwwg8vvt7vtwiuv.jpg",
+          "location": "California"
+      },
+      "49": {
+          "name": "Splitnose Rockfish",
+          "species_id": "Sebastes diploproa",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185721/fish_images/tothhzmdrgwlmvpfkiya.jpg",
+          "location": "California"
+      },
+      "50": {
+          "name": "Spotted Bass",
+          "species_id": "Micropterus punctulatus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751053672/fishial_ai/Spotted_Bass.jpg",
+          "location": "California"
+      },
+      "51": {
+          "name": "Vermilion Rockfish",
+          "species_id": "Sebastes miniatus",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054467/fishial_ai/Vermilion_Rockfish.jpg",
+          "location": "California"
+      },
+      "52": {
+          "name": "White Seabass",
+          "species_id": "Atractoscion nobilis",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185754/fish_images/s8xhvfqz4y7osvqjk5mx.jpg",
+          "location": "California"
+      },
+      "53": {
+          "name": "Widow Rockfish",
+          "species_id": "Sebastes entomelas",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751185768/fish_images/vqflwg7iuipe9bifoela.jpg",
+          "location": "California"
+      },
+      "54": {
+          "name": "Yellowtail",
+          "species_id": "Seriola lalandi",
+          "image_url": "https://res.cloudinary.com/dtz92sayc/image/upload/v1751054503/fishial_ai/Yellowtail.jpg",
+          "location": "California"
+      }
   }
 }

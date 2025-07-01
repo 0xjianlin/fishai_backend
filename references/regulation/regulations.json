@@ -102,7 +102,7 @@
       ]
     },
     {
-      "species": "California Scorpionfish (Sculpin)",
+      "species": "California Scorpionfish",
       "regulatory_reference": "",
       "category": "Fish",
       "latin_name": "Scorpaena guttata",
@@ -198,7 +198,7 @@
       ]
     },
     {
-      "species": "Dwarf Rock Crab",
+      "species": "Graceful Rock Crab",
       "regulatory_reference": "T14 CCR §29.04",
       "category": "Crustacean",
       "latin_name": "Metacarcinus gracilis",
@@ -230,7 +230,7 @@
       ]
     },
     {
-      "species": "Greenblotched Rockfish",
+      "species": "Deacon Rockfish",
       "regulatory_reference": "",
       "category": "Fish",
       "latin_name": "Sebastes diaconus",

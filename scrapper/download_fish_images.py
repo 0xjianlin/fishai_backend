@@ -50,41 +50,37 @@
 # # # print("Done")
 
 
-# import os
-# import json
+import os
+import json
 
-# # Path to your data folder
-# data_root = r"D:\data_for_california_fish"  # change this if needed
+# Path to your data folder
+data_root = r"D:\data_for_california_fish"  # change this if needed
 
-# # Output path for the annotation file
-# output_json = os.path.join(data_root, "data_train.json")
+# Output path for the annotation file
+output_json = os.path.join(data_root, "data_train.json")
 
-# # Supported image extensions
-# image_extensions = (".jpg", ".jpeg", ".png")
+annotations = []
 
-# annotations = []
+for species_name in os.listdir(data_root):
+    species_dir = os.path.join(data_root, species_name)
+    if os.path.isdir(species_dir):
+        for img_file in os.listdir(species_dir):
+            annotations.append({
+                "file_name": f"{species_name}/{img_file}",
+                "species_id": species_name
+            })
 
-# for species_name in os.listdir(data_root):
-#     species_dir = os.path.join(data_root, species_name)
-#     if os.path.isdir(species_dir):
-#         for img_file in os.listdir(species_dir):
-#             if img_file.lower().endswith(image_extensions):
-#                 annotations.append({
-#                     "file_name": f"{species_name}/{img_file}",
-#                     "species_id": species_name
-#                 })
+# Save to JSON
+with open(output_json, "w") as f:
+    json.dump(annotations, f, indent=2)
 
-# # Save to JSON
-# with open(output_json, "w") as f:
-#     json.dump(annotations, f, indent=2)
-
-# print(f"✅ Created {len(annotations)} annotations in {output_json}")
+print(f"✅ Created {len(annotations)} annotations in {output_json}")
 
 
 
-import torch
-db = torch.load("D:/Fishing-AI/fishai_backend/cache/models/embedding_database.pt", map_location="cpu")
+# import torch
+# db = torch.load("D:/Fishing-AI/fishai_backend/cache/models/embedding_database.pt", map_location="cpu")
 
-ids = db[1] if isinstance(db, tuple) else db['ids']
-unique_ids = set(ids if isinstance(ids[0], int) else [x[0] for x in ids])
-print(f"Unique class IDs in database: {len(unique_ids)}")
+# ids = db[1] if isinstance(db, tuple) else db['ids']
+# unique_ids = set(ids if isinstance(ids[0], int) else [x[0] for x in ids])
+# print(f"Unique class IDs in database: {len(unique_ids)}")
